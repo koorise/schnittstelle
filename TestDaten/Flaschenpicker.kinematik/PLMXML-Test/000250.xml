@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PLMXML xmlns="http://www.plmxml.org/Schemas/PLMXMLSchema"
+ schemaVersion="6" date="2009-01-07" time="16:02:40" author="Teamcenter V2007.1.2g.20080414.00 - Ju Chen@IMC-1012640870(1012640870)">
+<Header id="id1" traverseRootRefs="#id2 #id6 #id7 #id8 #id9 #id10 #id11 #id12 #id13 #id14 #id15 #id16 #id17 #id18 #id19 #id20 #id21 #id22 #id23 #id24 #id25 #id26 #id27 #id28 #id29 #id30 #id31 #id32 #id33 #id34 #id35 #id36 #id37 #id38 #id39 #id40 #id41 #id42 #id43 #id44 #id45 #id46 #id47 #id48 #id49 #id50 #id51" transferContext="EXTERNAL_SYSTEM_TRANSFERMODE"></Header>
+<Product id="id2" name="000250" accessRefs="#id3" subType="Item" productId="000250">
+<Description>000250</Description>
+<ApplicationRef version="CxNljht4DXrymB" application="Teamcenter" label="CxNljht4DXrymB"></ApplicationRef></Product>
+<Product id="id6" name="000257" accessRefs="#id3" subType="Item" productId="000257">
+<Description>000257</Description>
+<ApplicationRef version="C5Cljht4DXrymB" application="Teamcenter" label="C5Cljht4DXrymB"></ApplicationRef></Product>
+<Product id="id7" name="000274" accessRefs="#id3" subType="Item" productId="000274">
+<Description>000274</Description>
+<ApplicationRef version="SFFljht4DXrymB" application="Teamcenter" label="SFFljht4DXrymB"></ApplicationRef></Product>
+<Product id="id8" name="000276" accessRefs="#id3" subType="Item" productId="000276">
+<Description>000276</Description>
+<ApplicationRef version="SFLljht4DXrymB" application="Teamcenter" label="SFLljht4DXrymB"></ApplicationRef></Product>
+<Product id="id9" name="000254" accessRefs="#id3" subType="Item" productId="000254">
+<Description>000254</Description>
+<ApplicationRef version="C1Jljht4DXrymB" application="Teamcenter" label="C1Jljht4DXrymB"></ApplicationRef></Product>
+<Product id="id10" name="000272" accessRefs="#id3" subType="Item" productId="000272">
+<Description>000272</Description>
+<ApplicationRef version="SBPljht4DXrymB" application="Teamcenter" label="SBPljht4DXrymB"></ApplicationRef></Product>
+<Product id="id11" name="000275" accessRefs="#id3" subType="Item" productId="000275">
+<Description>000275</Description>
+<ApplicationRef version="SFIljht4DXrymB" application="Teamcenter" label="SFIljht4DXrymB"></ApplicationRef></Product>
+<Product id="id12" name="000267" accessRefs="#id3" subType="Item" productId="000267">
+<Description>000267</Description>
+<ApplicationRef version="SBAljht4DXrymB" application="Teamcenter" label="SBAljht4DXrymB"></ApplicationRef></Product>
+<Product id="id13" name="000269" accessRefs="#id3" subType="Item" productId="000269">
+<Description>000269</Description>
+<ApplicationRef version="SBGljht4DXrymB" application="Teamcenter" label="SBGljht4DXrymB"></ApplicationRef></Product>
+<Product id="id14" name="000270" accessRefs="#id3" subType="Item" productId="000270">
+<Description>000270</Description>
+<ApplicationRef version="SBJljht4DXrymB" application="Teamcenter" label="SBJljht4DXrymB"></ApplicationRef></Product>
+<Product id="id15" name="000271" accessRefs="#id3" subType="Item" productId="000271">
+<Description>000271</Description>
+<ApplicationRef version="SBMljht4DXrymB" application="Teamcenter" label="SBMljht4DXrymB"></ApplicationRef></Product>
+<Product id="id16" name="000240" accessRefs="#id3" subType="Item" productId="000240">
+<Description>000240</Description>
+<ApplicationRef version="CpPljht4DXrymB" application="Teamcenter" label="CpPljht4DXrymB"></ApplicationRef></Product>
+<Product id="id17" name="000252" accessRefs="#id3" subType="Item" productId="000252">
+<Description>000252</Description>
+<ApplicationRef version="C1Dljht4DXrymB" application="Teamcenter" label="C1Dljht4DXrymB"></ApplicationRef></Product>
+<Product id="id18" name="000245" accessRefs="#id3" subType="Item" productId="000245">
+<Description>000245</Description>
+<ApplicationRef version="CtOljht4DXrymB" application="Teamcenter" label="CtOljht4DXrymB"></ApplicationRef></Product>
+<Product id="id19" name="000265" accessRefs="#id3" subType="Item" productId="000265">
+<Description>000265</Description>
+<ApplicationRef version="C9Kljht4DXrymB" application="Teamcenter" label="C9Kljht4DXrymB"></ApplicationRef></Product>
+<Product id="id20" name="000241" accessRefs="#id3" subType="Item" productId="000241">
+<Description>000241</Description>
+<ApplicationRef version="CtCljht4DXrymB" application="Teamcenter" label="CtCljht4DXrymB"></ApplicationRef></Product>
+<Product id="id21" name="000247" accessRefs="#id3" subType="Item" productId="000247">
+<Description>000247</Description>
+<ApplicationRef version="CxEljht4DXrymB" application="Teamcenter" label="CxEljht4DXrymB"></ApplicationRef></Product>
+<Product id="id22" name="000256" accessRefs="#id3" subType="Item" productId="000256">
+<Description>000256</Description>
+<ApplicationRef version="C1Pljht4DXrymB" application="Teamcenter" label="C1Pljht4DXrymB"></ApplicationRef></Product>
+<Product id="id23" name="000259" accessRefs="#id3" subType="Item" productId="000259">
+<Description>000259</Description>
+<ApplicationRef version="C5Iljht4DXrymB" application="Teamcenter" label="C5Iljht4DXrymB"></ApplicationRef></Product>
+<Product id="id24" name="000255" accessRefs="#id3" subType="Item" productId="000255">
+<Description>000255</Description>
+<ApplicationRef version="C1Mljht4DXrymB" application="Teamcenter" label="C1Mljht4DXrymB"></ApplicationRef></Product>
+<Product id="id25" name="000253" accessRefs="#id3" subType="Item" productId="000253">
+<Description>000253</Description>
+<ApplicationRef version="C1Gljht4DXrymB" application="Teamcenter" label="C1Gljht4DXrymB"></ApplicationRef></Product>
+<Product id="id26" name="000273" accessRefs="#id3" subType="Item" productId="000273">
+<Description>000273</Description>
+<ApplicationRef version="SFCljht4DXrymB" application="Teamcenter" label="SFCljht4DXrymB"></ApplicationRef></Product>
+<Product id="id27" name="000242" accessRefs="#id3" subType="Item" productId="000242">
+<Description>000242</Description>
+<ApplicationRef version="CtFljht4DXrymB" application="Teamcenter" label="CtFljht4DXrymB"></ApplicationRef></Product>
+<Product id="id28" name="000258" accessRefs="#id3" subType="Item" productId="000258">
+<Description>000258</Description>
+<ApplicationRef version="C5Fljht4DXrymB" application="Teamcenter" label="C5Fljht4DXrymB"></ApplicationRef></Product>
+<Product id="id29" name="000260" accessRefs="#id3" subType="Item" productId="000260">
+<Description>000260</Description>
+<ApplicationRef version="C5Lljht4DXrymB" application="Teamcenter" label="C5Lljht4DXrymB"></ApplicationRef></Product>
+<Product id="id30" name="000248" accessRefs="#id3" subType="Item" productId="000248">
+<Description>000248</Description>
+<ApplicationRef version="CxHljht4DXrymB" application="Teamcenter" label="CxHljht4DXrymB"></ApplicationRef></Product>
+<Product id="id31" name="000268" accessRefs="#id3" subType="Item" productId="000268">
+<Description>000268</Description>
+<ApplicationRef version="SBDljht4DXrymB" application="Teamcenter" label="SBDljht4DXrymB"></ApplicationRef></Product>
+<Product id="id32" name="000239" accessRefs="#id3" subType="Item" productId="000239">
+<Description>000239</Description>
+<ApplicationRef version="CpMljht4DXrymB" application="Teamcenter" label="CpMljht4DXrymB"></ApplicationRef></Product>
+<Product id="id33" name="000238" accessRefs="#id3" subType="Item" productId="000238">
+<Description>000238</Description>
+<ApplicationRef version="CpJljht4DXrymB" application="Teamcenter" label="CpJljht4DXrymB"></ApplicationRef></Product>
+<Product id="id34" name="000237" accessRefs="#id3" subType="Item" productId="000237">
+<Description>000237</Description>
+<ApplicationRef version="CpGljht4DXrymB" application="Teamcenter" label="CpGljht4DXrymB"></ApplicationRef></Product>
+<Product id="id35" name="000236" accessRefs="#id3" subType="Item" productId="000236">
+<Description>000236</Description>
+<ApplicationRef version="CpDljht4DXrymB" application="Teamcenter" label="CpDljht4DXrymB"></ApplicationRef></Product>
+<Product id="id36" name="000235" accessRefs="#id3" subType="Item" productId="000235">
+<Description>000235</Description>
+<ApplicationRef version="CpAljht4DXrymB" application="Teamcenter" label="CpAljht4DXrymB"></ApplicationRef></Product>
+<Product id="id37" name="000234" accessRefs="#id3" subType="Item" productId="000234">
+<Description>000234</Description>
+<ApplicationRef version="ClNljht4DXrymB" application="Teamcenter" label="ClNljht4DXrymB"></ApplicationRef></Product>
+<Product id="id38" name="000233" accessRefs="#id3" subType="Item" productId="000233">
+<Description>000233</Description>
+<ApplicationRef version="ClKljht4DXrymB" application="Teamcenter" label="ClKljht4DXrymB"></ApplicationRef></Product>
+<Product id="id39" name="000232" accessRefs="#id3" subType="Item" productId="000232">
+<Description>000232</Description>
+<ApplicationRef version="ClHljht4DXrymB" application="Teamcenter" label="ClHljht4DXrymB"></ApplicationRef></Product>
+<Product id="id40" name="000231" accessRefs="#id3" subType="Item" productId="000231">
+<Description>000231</Description>
+<ApplicationRef version="ClEljht4DXrymB" application="Teamcenter" label="ClEljht4DXrymB"></ApplicationRef></Product>
+<Product id="id41" name="000230" accessRefs="#id3" subType="Item" productId="000230">
+<Description>000230</Description>
+<ApplicationRef version="ClBljht4DXrymB" application="Teamcenter" label="ClBljht4DXrymB"></ApplicationRef></Product>
+<Product id="id42" name="000229" accessRefs="#id3" subType="Item" productId="000229">
+<Description>000229</Description>
+<ApplicationRef version="ChOljht4DXrymB" application="Teamcenter" label="ChOljht4DXrymB"></ApplicationRef></Product>
+<Product id="id43" name="000228" accessRefs="#id3" subType="Item" productId="000228">
+<Description>000228</Description>
+<ApplicationRef version="ChLljht4DXrymB" application="Teamcenter" label="ChLljht4DXrymB"></ApplicationRef></Product>
+<Product id="id44" name="000227" accessRefs="#id3" subType="Item" productId="000227">
+<Description>000227</Description>
+<ApplicationRef version="ChIljht4DXrymB" application="Teamcenter" label="ChIljht4DXrymB"></ApplicationRef></Product>
+<Product id="id45" name="000226" accessRefs="#id3" subType="Item" productId="000226">
+<Description>000226</Description>
+<ApplicationRef version="ChFljht4DXrymB" application="Teamcenter" label="ChFljht4DXrymB"></ApplicationRef></Product>
+<Product id="id46" name="000225" accessRefs="#id3" subType="Item" productId="000225">
+<Description>000225</Description>
+<ApplicationRef version="ChCljht4DXrymB" application="Teamcenter" label="ChCljht4DXrymB"></ApplicationRef></Product>
+<Product id="id47" name="000224" accessRefs="#id3" subType="Item" productId="000224">
+<Description>000224</Description>
+<ApplicationRef version="CdPljht4DXrymB" application="Teamcenter" label="CdPljht4DXrymB"></ApplicationRef></Product>
+<Product id="id48" name="000223" accessRefs="#id3" subType="Item" productId="000223">
+<Description>000223</Description>
+<ApplicationRef version="CdMljht4DXrymB" application="Teamcenter" label="CdMljht4DXrymB"></ApplicationRef></Product>
+<Product id="id49" name="000221" accessRefs="#id3" subType="Item" productId="000221">
+<Description>000221</Description>
+<ApplicationRef version="CdFljht4DXrymB" application="Teamcenter" label="CdFljht4DXrymB"></ApplicationRef></Product>
+<Product id="id50" name="1FK7 032 Bremse_Standard" accessRefs="#id3" subType="Item" productId="1FK7 032 Bremse_Standard">
+<Description>1FK7 032 Bremse_Standard</Description>
+<ApplicationRef version="yoKljht4DXrymB" application="Teamcenter" label="yoKljht4DXrymB"></ApplicationRef></Product>
+<Product id="id51" name="123" accessRefs="#id3" subType="SignalItem" productId="000218">
+<ApplicationRef version="CgMlTRBUDXrymB" application="Teamcenter" label="CgMlTRBUDXrymB"></ApplicationRef></Product>
+<AccessIntent id="id3" intent="reference" ownerRefs="#id4"></AccessIntent>
+<Site id="id4" name="IMC-1012640870" siteId="1012640870">
+<UserData id="id5">
+<UserValue value="1" title="dbms"></UserValue></UserData></Site></PLMXML>

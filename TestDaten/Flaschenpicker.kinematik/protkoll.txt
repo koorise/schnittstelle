@@ -1,0 +1,479 @@
+Klonen-Logdatei in Baugruppe
+&LOG Operation_Type: IMPORT_OPERATION
+&LOG Default_Cloning_Action: OVERWRITE
+&LOG Default_Naming_Technique: AUTO_GENERATE
+&LOG Default_Container: ""
+&LOG Default_Directory: ""
+&LOG Default_Part_Type: Item
+&LOG Default_Part_Name: ""
+&LOG Default_Part_Description: ""
+&LOG Default_Copy_Associated_Files: Yes
+&LOG Default_Non_Master_Copy: specification Yes
+&LOG Default_Non_Master_Copy: manifestation Yes
+&LOG Default_Non_Master_Copy: altrep Yes
+&LOG Default_Non_Master_Copy: scenario Yes
+&LOG Default_Non_Master_Copy: simulation Yes
+&LOG Default_Non_Master_Copy: motion Yes
+&LOG Default_Non_Master_Copy: cae_solution Yes
+&LOG Default_Non_Master_Copy: cae_mesh Yes
+&LOG Default_Non_Master_Copy: cae_geometry Yes
+&LOG Default_Associated_Files_Directory: ""
+&LOG Default_Validation_Mode: OFF
+&LOG 
+&LOG Part: "Z:\533926 QS-F-M7-6-I.prt"
+&LOG Cloning_Action: DEFAULT_DISP Naming_Technique: DEFAULT_NAMING Clone_Name: @DB/000221/A
+&LOG Container: ""
+&LOG Part_Type: Item
+&LOG Part_Name: 000221
+&LOG Part_Description: 000221
+&LOG Associated_Files_Directory: "Z:\533926 QS-F-M7-6-I"
+&LOG 
+&LOG Part: "D:\SmA_3D\NX5\Uebergeordnete_Komponenten\691296_GLAS mit Barcode.prt"
+&LOG Naming_Technique: DEFAULT_NAMING Clone_Name: @DB/000222/A
+&LOG Container: ""
+&LOG Part_Type: Item
+&LOG Part_Name: 000222
+&LOG Part_Description: 000222
+&LOG Associated_Files_Directory: "D:\SmA_3D\NX5\Uebergeordnete_Komponenten\691296_GLAS mit Barcode"
+&LOG 
+&LOG Part: "Z:\150366 SIEN-4B-PO-K-L.prt"
+&LOG Cloning_Action: DEFAULT_DISP Naming_Technique: DEFAULT_NAMING Clone_Name: @DB/000223/A
+&LOG Container: ""
+&LOG Part_Type: Item
+&LOG Part_Name: 000223
+&LOG Part_Description: 000223
+&LOG Associated_Files_Directory: "Z:\150366 SIEN-4B-PO-K-L"
+&LOG 
+&LOG Part: "Z:\525866 DGEA-25-YSR---_asm_1.prt"
+&LOG Cloning_Action: DEFAULT_DISP Naming_Technique: DEFAULT_NAMING Clone_Name: @DB/000224/A
+&LOG Container: ""
+&LOG Part_Type: Item
+&LOG Part_Name: 000224
+&LOG Part_Description: 000224
+&LOG Associated_Files_Directory: "Z:\525866 DGEA-25-YSR---_asm_1"
+&LOG 
+&LOG Part: "Z:\525866 DGEA-25-YSR---_asm_2.prt"
+&LOG Cloning_Action: DEFAULT_DISP Naming_Technique: DEFAULT_NAMING Clone_Name: @DB/000225/A
+&LOG Container: ""
+&LOG Part_Type: Item
+&LOG Part_Name: 000225
+&LOG Part_Description: 000225
+&LOG Associated_Files_Directory: "Z:\525866 DGEA-25-YSR---_asm_2"
+&LOG 
+&LOG Part: "Z:\525866 DGEA-25-YSR---_asm_3.prt"
+&LOG Cloning_Action: DEFAULT_DISP Naming_Technique: DEFAULT_NAMING Clone_Name: @DB/000226/A
+&LOG Container: ""
+&LOG Part_Type: Item
+&LOG Part_Name: 000226
+&LOG Part_Description: 000226
+&LOG Associated_Files_Directory: "Z:\525866 DGEA-25-YSR---_asm_3"
+&LOG 
+&LOG Part: "Z:\525866 DGEA-25-YSR---_asm_6.prt"
+&LOG Cloning_Action: DEFAULT_DISP Naming_Technique: DEFAULT_NAMING Clone_Name: @DB/000227/A
+&LOG Container: ""
+&LOG Part_Type: Item
+&LOG Part_Name: 000227
+&LOG Part_Description: 000227
+&LOG Associated_Files_Directory: "Z:\525866 DGEA-25-YSR---_asm_6"
+&LOG 
+&LOG Part: "Z:\525866 DGEA-25-YSR---_asm_9.prt"
+&LOG Cloning_Action: DEFAULT_DISP Naming_Technique: DEFAULT_NAMING Clone_Name: @DB/000228/A
+&LOG Container: ""
+&LOG Part_Type: Item
+&LOG Part_Name: 000228
+&LOG Part_Description: 000228
+&LOG Associated_Files_Directory: "Z:\525866 DGEA-25-YSR---_asm_9"
+&LOG 
+&LOG Part: "Z:\NONED.prt"
+&LOG Cloning_Action: DEFAULT_DISP Naming_Technique: DEFAULT_NAMING Clone_Name: @DB/000229/A
+&LOG Container: ""
+&LOG Part_Type: Item
+&LOG Part_Name: 000229
+&LOG Part_Description: 000229
+&LOG Associated_Files_Directory: "Z:\NONED"
+&LOG 
+&LOG Part: "Z:\NONEE.prt"
+&LOG Cloning_Action: DEFAULT_DISP Naming_Technique: DEFAULT_NAMING Clone_Name: @DB/000230/A
+&LOG Container: ""
+&LOG Part_Type: Item
+&LOG Part_Name: 000230
+&LOG Part_Description: 000230
+&LOG Associated_Files_Directory: "Z:\NONEE"
+&LOG 
+&LOG Part: "Z:\NONEF.prt"
+&LOG Cloning_Action: DEFAULT_DISP Naming_Technique: DEFAULT_NAMING Clone_Name: @DB/000231/A
+&LOG Container: ""
+&LOG Part_Type: Item
+&LOG Part_Name: 000231
+&LOG Part_Description: 000231
+&LOG Associated_Files_Directory: "Z:\NONEF"
+&LOG 
+&LOG Part: "Z:\NONEG.prt"
+&LOG Cloning_Action: DEFAULT_DISP Naming_Technique: DEFAULT_NAMING Clone_Name: @DB/000232/A
+&LOG Container: ""
+&LOG Part_Type: Item
+&LOG Part_Name: 000232
+&LOG Part_Description: 000232
+&LOG Associated_Files_Directory: "Z:\NONEG"
+&LOG 
+&LOG Part: "Z:\NONEH.prt"
+&LOG Cloning_Action: DEFAULT_DISP Naming_Technique: DEFAULT_NAMING Clone_Name: @DB/000233/A
+&LOG Container: ""
+&LOG Part_Type: Item
+&LOG Part_Name: 000233
+&LOG Part_Description: 000233
+&LOG Associated_Files_Directory: "Z:\NONEH"
+&LOG 
+&LOG Part: "Z:\NONEI.prt"
+&LOG Cloning_Action: DEFAULT_DISP Naming_Technique: DEFAULT_NAMING Clone_Name: @DB/000234/A
+&LOG Container: ""
+&LOG Part_Type: Item
+&LOG Part_Name: 000234
+&LOG Part_Description: 000234
+&LOG Associated_Files_Directory: "Z:\NONEI"
+&LOG 
+&LOG Part: "Z:\525866 DGEA-25-YSR---_asm_4.prt"
+&LOG Cloning_Action: DEFAULT_DISP Naming_Technique: DEFAULT_NAMING Clone_Name: @DB/000235/A
+&LOG Container: ""
+&LOG Part_Type: Item
+&LOG Part_Name: 000235
+&LOG Part_Description: 000235
+&LOG Associated_Files_Directory: "Z:\525866 DGEA-25-YSR---_asm_4"
+&LOG 
+&LOG Part: "Z:\525866 DGEA-25-YSR---_asm_5.prt"
+&LOG Cloning_Action: DEFAULT_DISP Naming_Technique: DEFAULT_NAMING Clone_Name: @DB/000236/A
+&LOG Container: ""
+&LOG Part_Type: Item
+&LOG Part_Name: 000236
+&LOG Part_Description: 000236
+&LOG Associated_Files_Directory: "Z:\525866 DGEA-25-YSR---_asm_5"
+&LOG 
+&LOG Part: "Z:\NONEL.prt"
+&LOG Cloning_Action: DEFAULT_DISP Naming_Technique: DEFAULT_NAMING Clone_Name: @DB/000237/A
+&LOG Container: ""
+&LOG Part_Type: Item
+&LOG Part_Name: 000237
+&LOG Part_Description: 000237
+&LOG Associated_Files_Directory: "Z:\NONEL"
+&LOG 
+&LOG Part: "Z:\525866 DGEA-25-YSR---_asm_7.prt"
+&LOG Cloning_Action: DEFAULT_DISP Naming_Technique: DEFAULT_NAMING Clone_Name: @DB/000238/A
+&LOG Container: ""
+&LOG Part_Type: Item
+&LOG Part_Name: 000238
+&LOG Part_Description: 000238
+&LOG Associated_Files_Directory: "Z:\525866 DGEA-25-YSR---_asm_7"
+&LOG 
+&LOG Part: "Z:\525866 DGEA-25-YSR---_asm_8.prt"
+&LOG Cloning_Action: DEFAULT_DISP Naming_Technique: DEFAULT_NAMING Clone_Name: @DB/000239/A
+&LOG Container: ""
+&LOG Part_Type: Item
+&LOG Part_Name: 000239
+&LOG Part_Description: 000239
+&LOG Associated_Files_Directory: "Z:\525866 DGEA-25-YSR---_asm_8"
+&LOG 
+&LOG Part: "Z:\Greifereinheit m Flasche.prt"
+&LOG Cloning_Action: DEFAULT_DISP Naming_Technique: DEFAULT_NAMING Clone_Name: @DB/000240/A
+&LOG Container: ""
+&LOG Part_Type: Item
+&LOG Part_Name: 000240
+&LOG Part_Description: 000240
+&LOG Associated_Files_Directory: "Z:\Greifereinheit m Flasche"
+&LOG 
+&LOG Part: "Z:\Ver2_Greifer_SB32_Standard.prt"
+&LOG Cloning_Action: DEFAULT_DISP Naming_Technique: DEFAULT_NAMING Clone_Name: @DB/000252/A
+&LOG Container: ""
+&LOG Part_Type: Item
+&LOG Part_Name: 000252
+&LOG Part_Description: 000252
+&LOG Associated_Files_Directory: "Z:\Ver2_Greifer_SB32_Standard"
+&LOG 
+&LOG Part: "Z:\Ver2_sb32-sv_Standard_rechts.prt"
+&LOG Cloning_Action: DEFAULT_DISP Naming_Technique: DEFAULT_NAMING Clone_Name: @DB/000273/A
+&LOG Container: ""
+&LOG Part_Type: Item
+&LOG Part_Name: 000273
+&LOG Part_Description: 000273
+&LOG Associated_Files_Directory: "Z:\Ver2_sb32-sv_Standard_rechts"
+&LOG 
+&LOG Part: "Z:\B168-001_Standard_Standard.prt"
+&LOG Cloning_Action: DEFAULT_DISP Naming_Technique: DEFAULT_NAMING Clone_Name: @DB/000268/A
+&LOG Container: ""
+&LOG Part_Type: Item
+&LOG Part_Name: 000268
+&LOG Part_Description: 000268
+&LOG Associated_Files_Directory: "Z:\B168-001_Standard_Standard"
+&LOG 
+&LOG Part: "Z:\SB32-1-B_SV_Standard.prt"
+&LOG Cloning_Action: DEFAULT_DISP Naming_Technique: DEFAULT_NAMING Clone_Name: @DB/000248/A
+&LOG Container: ""
+&LOG Part_Type: Item
+&LOG Part_Name: 000248
+&LOG Part_Description: 000248
+&LOG Associated_Files_Directory: "Z:\SB32-1-B_SV_Standard"
+&LOG 
+&LOG Part: "Z:\sb32_c_Standard_rechts.prt"
+&LOG Cloning_Action: DEFAULT_DISP Naming_Technique: DEFAULT_NAMING Clone_Name: @DB/000258/A
+&LOG Container: ""
+&LOG Part_Type: Item
+&LOG Part_Name: 000258
+&LOG Part_Description: 000258
+&LOG Associated_Files_Directory: "Z:\sb32_c_Standard_rechts"
+&LOG 
+&LOG Part: "Z:\SB32-D210924.prt"
+&LOG Cloning_Action: DEFAULT_DISP Naming_Technique: DEFAULT_NAMING Clone_Name: @DB/000260/A
+&LOG Container: ""
+&LOG Part_Type: Item
+&LOG Part_Name: 000260
+&LOG Part_Description: 000260
+&LOG Associated_Files_Directory: "Z:\SB32-D210924"
+&LOG 
+&LOG Part: "Z:\I.prt"
+&LOG Cloning_Action: DEFAULT_DISP Naming_Technique: DEFAULT_NAMING Clone_Name: @DB/000242/A
+&LOG Container: ""
+&LOG Part_Type: Item
+&LOG Part_Name: 000242
+&LOG Part_Description: 000242
+&LOG Associated_Files_Directory: "Z:\I"
+&LOG 
+&LOG Part: "D:\SmA_3D\NX5\Uebergeordnete_Komponenten\162991 GRLA-M5-QS-4-LF-B.prt"
+&LOG Naming_Technique: DEFAULT_NAMING Clone_Name: @DB/000243/A
+&LOG Container: ""
+&LOG Part_Type: Item
+&LOG Part_Name: 000243
+&LOG Part_Description: 000243
+&LOG Associated_Files_Directory: "D:\SmA_3D\NX5\Uebergeordnete_Komponenten\162991 GRLA-M5-QS-4-LF-B"
+&LOG 
+&LOG Part: "Z:\GP608NC_AUF_mib_Standard.prt"
+&LOG Cloning_Action: DEFAULT_DISP Naming_Technique: DEFAULT_NAMING Clone_Name: @DB/000253/A
+&LOG Container: ""
+&LOG Part_Type: Item
+&LOG Part_Name: 000253
+&LOG Part_Description: 000253
+&LOG Associated_Files_Directory: "Z:\GP608NC_AUF_mib_Standard"
+&LOG 
+&LOG Part: "Z:\Ver2_sb32-sv_Standard_Standard.prt"
+&LOG Cloning_Action: DEFAULT_DISP Naming_Technique: DEFAULT_NAMING Clone_Name: @DB/000247/A
+&LOG Container: ""
+&LOG Part_Type: Item
+&LOG Part_Name: 000247
+&LOG Part_Description: 000247
+&LOG Associated_Files_Directory: "Z:\Ver2_sb32-sv_Standard_Standard"
+&LOG 
+&LOG Part: "Z:\sb32_c_StandardA.prt"
+&LOG Cloning_Action: DEFAULT_DISP Naming_Technique: DEFAULT_NAMING Clone_Name: @DB/000256/A
+&LOG Container: ""
+&LOG Part_Type: Item
+&LOG Part_Name: 000256
+&LOG Part_Description: 000256
+&LOG Associated_Files_Directory: "Z:\sb32_c_StandardA"
+&LOG 
+&LOG Part: "Z:\sb32_c_Standard.prt"
+&LOG Cloning_Action: DEFAULT_DISP Naming_Technique: DEFAULT_NAMING Clone_Name: @DB/000259/A
+&LOG Container: ""
+&LOG Part_Type: Item
+&LOG Part_Name: 000259
+&LOG Part_Description: 000259
+&LOG Associated_Files_Directory: "Z:\sb32_c_Standard"
+&LOG 
+&LOG Part: "Z:\SB32-D.prt"
+&LOG Cloning_Action: DEFAULT_DISP Naming_Technique: DEFAULT_NAMING Clone_Name: @DB/000255/A
+&LOG Container: ""
+&LOG Part_Type: Item
+&LOG Part_Name: 000255
+&LOG Part_Description: 000255
+&LOG Associated_Files_Directory: "Z:\SB32-D"
+&LOG 
+&LOG Part: "Z:\Zwischenplatte_GP608_SB32_Standard.prt"
+&LOG Cloning_Action: DEFAULT_DISP Naming_Technique: DEFAULT_NAMING Clone_Name: @DB/000241/A
+&LOG Container: ""
+&LOG Part_Type: Item
+&LOG Part_Name: 000241
+&LOG Part_Description: 000241
+&LOG Associated_Files_Directory: "Z:\Zwischenplatte_GP608_SB32_Standard"
+&LOG 
+&LOG Part: "Z:\B168-004_Standard_Standard.prt"
+&LOG Cloning_Action: DEFAULT_DISP Naming_Technique: DEFAULT_NAMING Clone_Name: @DB/000265/A
+&LOG Container: ""
+&LOG Part_Type: Item
+&LOG Part_Name: 000265
+&LOG Part_Description: 000265
+&LOG Associated_Files_Directory: "Z:\B168-004_Standard_Standard"
+&LOG 
+&LOG Part: "Z:\Festo_Steckverschraubung_QSML-M5-6_Standard.prt"
+&LOG Cloning_Action: DEFAULT_DISP Naming_Technique: DEFAULT_NAMING Clone_Name: @DB/000245/A
+&LOG Container: ""
+&LOG Part_Type: Item
+&LOG Part_Name: 000245
+&LOG Part_Description: 000245
+&LOG Associated_Files_Directory: "Z:\Festo_Steckverschraubung_QSML-M5-6_Standard"
+&LOG 
+&LOG Part: "D:\SmA_3D\NX5\Uebergeordnete_Komponenten\533151 CPE10-M1BH-5-3B-QS4-B.prt"
+&LOG Naming_Technique: DEFAULT_NAMING Clone_Name: @DB/000244/A
+&LOG Container: ""
+&LOG Part_Type: Item
+&LOG Part_Name: 000244
+&LOG Part_Description: 000244
+&LOG Associated_Files_Directory: "D:\SmA_3D\NX5\Uebergeordnete_Komponenten\533151 CPE10-M1BH-5-3B-QS4-B"
+&LOG 
+&LOG Part: "D:\SmA_3D\NX5\Uebergeordnete_Komponenten\533851 QSL-F-M7-4.prt"
+&LOG Naming_Technique: DEFAULT_NAMING Clone_Name: @DB/000246/A
+&LOG Container: ""
+&LOG Part_Type: Item
+&LOG Part_Name: 000246
+&LOG Part_Description: 000246
+&LOG Associated_Files_Directory: "D:\SmA_3D\NX5\Uebergeordnete_Komponenten\533851 QSL-F-M7-4"
+&LOG 
+&LOG Part: "D:\SmA_3D\NX5\Uebergeordnete_Komponenten\153496 LRMA-QS-6.prt"
+&LOG Naming_Technique: DEFAULT_NAMING Clone_Name: @DB/000249/A
+&LOG Container: ""
+&LOG Part_Type: Item
+&LOG Part_Name: 000249
+&LOG Part_Description: 000249
+&LOG Associated_Files_Directory: "D:\SmA_3D\NX5\Uebergeordnete_Komponenten\153496 LRMA-QS-6"
+&LOG 
+&LOG Part: "Z:\_Z-Achse kompl.prt"
+&LOG Cloning_Action: DEFAULT_DISP Naming_Technique: DEFAULT_NAMING Clone_Name: @DB/000250/A
+&LOG Container: ""
+&LOG Part_Type: Item
+&LOG Part_Name: 000250
+&LOG Part_Description: 000250
+&LOG Associated_Files_Directory: "Z:\_Z-Achse kompl"
+&LOG 
+&LOG Part: "Z:\525866 DGEA-25-YSR---_asm_.prt"
+&LOG Cloning_Action: DEFAULT_DISP Naming_Technique: DEFAULT_NAMING Clone_Name: @DB/000267/A
+&LOG Container: ""
+&LOG Part_Type: Item
+&LOG Part_Name: 000267
+&LOG Part_Description: 000267
+&LOG Associated_Files_Directory: "Z:\525866 DGEA-25-YSR---_asm_"
+&LOG 
+&LOG Part: "Z:\525866 DGEA-25-YSR---_asm_12.prt"
+&LOG Cloning_Action: DEFAULT_DISP Naming_Technique: DEFAULT_NAMING Clone_Name: @DB/000271/A
+&LOG Container: ""
+&LOG Part_Type: Item
+&LOG Part_Name: 000271
+&LOG Part_Description: 000271
+&LOG Associated_Files_Directory: "Z:\525866 DGEA-25-YSR---_asm_12"
+&LOG 
+&LOG Part: "Z:\525866 DGEA-25-YSR---_asm_11.prt"
+&LOG Cloning_Action: DEFAULT_DISP Naming_Technique: DEFAULT_NAMING Clone_Name: @DB/000270/A
+&LOG Container: ""
+&LOG Part_Type: Item
+&LOG Part_Name: 000270
+&LOG Part_Description: 000270
+&LOG Associated_Files_Directory: "Z:\525866 DGEA-25-YSR---_asm_11"
+&LOG 
+&LOG Part: "Z:\525866 DGEA-25-YSR---_asm_10.prt"
+&LOG Cloning_Action: DEFAULT_DISP Naming_Technique: DEFAULT_NAMING Clone_Name: @DB/000269/A
+&LOG Container: ""
+&LOG Part_Type: Item
+&LOG Part_Name: 000269
+&LOG Part_Description: 000269
+&LOG Associated_Files_Directory: "Z:\525866 DGEA-25-YSR---_asm_10"
+&LOG 
+&LOG Part: "Z:\Mitnemer_igus_z_bew_Standard.prt"
+&LOG Cloning_Action: DEFAULT_DISP Naming_Technique: DEFAULT_NAMING Clone_Name: @DB/000275/A
+&LOG Container: ""
+&LOG Part_Type: Item
+&LOG Part_Name: 000275
+&LOG Part_Description: 000275
+&LOG Associated_Files_Directory: "Z:\Mitnemer_igus_z_bew_Standard"
+&LOG 
+&LOG Part: "Z:\525866 DGEA-25-YSR---_asm_13.prt"
+&LOG Cloning_Action: DEFAULT_DISP Naming_Technique: DEFAULT_NAMING Clone_Name: @DB/000272/A
+&LOG Container: ""
+&LOG Part_Type: Item
+&LOG Part_Name: 000272
+&LOG Part_Description: 000272
+&LOG Associated_Files_Directory: "Z:\525866 DGEA-25-YSR---_asm_13"
+&LOG 
+&LOG Part: "Z:\195612_DGEA_25_500_ZR____A__Standard.prt"
+&LOG Cloning_Action: DEFAULT_DISP Naming_Technique: DEFAULT_NAMING Clone_Name: @DB/000254/A
+&LOG Container: ""
+&LOG Part_Type: Item
+&LOG Part_Name: 000254
+&LOG Part_Description: 000254
+&LOG Associated_Files_Directory: "Z:\195612_DGEA_25_500_ZR____A__Standard"
+&LOG 
+&LOG Part: "Z:\VN3027-626_Schaltfahne.prt"
+&LOG Cloning_Action: DEFAULT_DISP Naming_Technique: DEFAULT_NAMING Clone_Name: @DB/000276/A
+&LOG Container: ""
+&LOG Part_Type: Item
+&LOG Part_Name: 000276
+&LOG Part_Description: 000276
+&LOG Associated_Files_Directory: "Z:\VN3027-626_Schaltfahne"
+&LOG 
+&LOG Part: "Z:\3RK2400-1BT30_ASi_Siemens.prt"
+&LOG Cloning_Action: DEFAULT_DISP Naming_Technique: DEFAULT_NAMING Clone_Name: @DB/000274/A
+&LOG Container: ""
+&LOG Part_Type: Item
+&LOG Part_Name: 000274
+&LOG Part_Description: 000274
+&LOG Associated_Files_Directory: "Z:\3RK2400-1BT30_ASi_Siemens"
+&LOG 
+&LOG Part: "Z:\Greifer_Adapter_Platte_Standard.prt"
+&LOG Cloning_Action: DEFAULT_DISP Naming_Technique: DEFAULT_NAMING Clone_Name: @DB/000257/A
+&LOG Container: ""
+&LOG Part_Type: Item
+&LOG Part_Name: 000257
+&LOG Part_Description: 000257
+&LOG Associated_Files_Directory: "Z:\Greifer_Adapter_Platte_Standard"
+&LOG 
+&LOG Part: "NONEL_ver.prt"
+&LOG Naming_Technique: DEFAULT_NAMING Clone_Name: @DB/000251/A
+&LOG Container: ""
+&LOG Part_Type: ""
+&LOG Part_Name: ""
+&LOG Part_Description: ""
+&LOG Associated_Files_Directory: ""
+&LOG 
+&LOG Part: "PRODUCT_NAME_1.prt"
+&LOG Naming_Technique: DEFAULT_NAMING Clone_Name: @DB/000261/A
+&LOG Container: ""
+&LOG Part_Type: ""
+&LOG Part_Name: ""
+&LOG Part_Description: ""
+&LOG Associated_Files_Directory: ""
+&LOG 
+&LOG Part: "PRODUCT_NAME_3.prt"
+&LOG Naming_Technique: DEFAULT_NAMING Clone_Name: @DB/000262/A
+&LOG Container: ""
+&LOG Part_Type: ""
+&LOG Part_Name: ""
+&LOG Part_Description: ""
+&LOG Associated_Files_Directory: ""
+&LOG 
+&LOG Part: "PRODUCT_NAME_4.prt"
+&LOG Naming_Technique: DEFAULT_NAMING Clone_Name: @DB/000263/A
+&LOG Container: ""
+&LOG Part_Type: ""
+&LOG Part_Name: ""
+&LOG Part_Description: ""
+&LOG Associated_Files_Directory: ""
+&LOG 
+&LOG Part: "PRODUCT_NAME_5.prt"
+&LOG Naming_Technique: DEFAULT_NAMING Clone_Name: @DB/000264/A
+&LOG Container: ""
+&LOG Part_Type: ""
+&LOG Part_Name: ""
+&LOG Part_Description: ""
+&LOG Associated_Files_Directory: ""
+&LOG 
+&LOG Part: "34997 KMYZ-2-24-2,5.prt"
+&LOG Naming_Technique: DEFAULT_NAMING Clone_Name: @DB/000266/A
+&LOG Container: ""
+&LOG Part_Type: ""
+&LOG Part_Name: ""
+&LOG Part_Description: ""
+&LOG Associated_Files_Directory: ""
+&LOG 
+&LOG Part: "161418 UC-M7.prt"
+&LOG Naming_Technique: DEFAULT_NAMING Clone_Name: @DB/000277/A
+&LOG Container: ""
+&LOG Part_Type: ""
+&LOG Part_Name: ""
+&LOG Part_Description: ""
+&LOG Associated_Files_Directory: ""
+&LOG 
+

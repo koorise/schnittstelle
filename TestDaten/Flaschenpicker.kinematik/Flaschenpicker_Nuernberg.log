@@ -1,0 +1,3935 @@
+STEP to UG
+! INFO-     NX STEP AP214 - V5.0
+! INFO-      
+! INFO-     Start of Translation: 16-APR-2008  12:46:18 PM
+! INFO-      
+! STATUS-   Converting Part: D:\SmA_3D\STEP\Flaschenpicker\Flaschenpicker_Nuernberg1.stp
+! SUMMARY-   
+! SUMMARY-    STEP Header Information
+! SUMMARY-   
+! SUMMARY-  Description      Unknown
+! SUMMARY-  Imp_Level        2;1
+! SUMMARY-  File_Name        D:\SmA_3D\STEP\Flaschenpicker\Flaschenpicker_Nuernberg.stp
+! SUMMARY-  Date             2008-04-16T11:03:05
+! SUMMARY-  Author           ADOWLU0
+! SUMMARY-  Organization     Unknown
+! SUMMARY-  Pre_Version      Autodesk Inventor 2008
+! SUMMARY-  Orig_System      Autodesk Inventor 2008
+! SUMMARY-  Authorization    Unknown
+! SUMMARY-  Schema_ID        automotive_design
+! SUMMARY-   
+! SUMMARY-    Summary of STEP Entities
+! SUMMARY-   
+! SUMMARY-  Entity Type                                                   Count
+! SUMMARY-  -----------                                                   ------
+! SUMMARY-  advanced_brep_shape_representation .........................:    120
+! SUMMARY-  advanced_face ..............................................:   8822
+! SUMMARY-  application_context ........................................:    153
+! SUMMARY-  application_protocol_definition ............................:    153
+! SUMMARY-  axis2_placement_3d .........................................:  15226
+! SUMMARY-  b_spline_curve_with_knots ..................................:   1692
+! SUMMARY-  b_spline_curve_with_knots_and_rational_b_spline_curve ......:    268
+! SUMMARY-  b_spline_surface_with_knots ................................:    370
+! SUMMARY-  b_spline_surface_with_knots_and_rational_b_spline_surface ..:    197
+! SUMMARY-  brep_with_voids ............................................:      4
+! SUMMARY-  cartesian_point ............................................:  91392
+! SUMMARY-  circle .....................................................:   6417
+! SUMMARY-  closed_shell ...............................................:    197
+! SUMMARY-  conical_surface ............................................:    824
+! SUMMARY-  context_dependent_shape_representation .....................:    327
+! SUMMARY-  conversion_based_unit_and_plane_angle_unit .................:    331
+! SUMMARY-  cylindrical_surface ........................................:   2579
+! SUMMARY-  dimensional_exponents ......................................:    331
+! SUMMARY-  direction ..................................................:  41559
+! SUMMARY-  edge_curve .................................................:  19658
+! SUMMARY-  edge_loop ..................................................:  12785
+! SUMMARY-  ellipse ....................................................:     74
+! SUMMARY-  face_bound .................................................:   3963
+! SUMMARY-  face_outer_bound ...........................................:   8822
+! SUMMARY-  geometric_representation_context_and_global_uncertainty_a ..:    331
+! SUMMARY-  item_defined_transformation ................................:    327
+! SUMMARY-  length_unit_and_si_unit ....................................:    331
+! SUMMARY-  line .......................................................:  11107
+! SUMMARY-  manifold_solid_brep ........................................:    172
+! SUMMARY-  next_assembly_usage_occurrence .............................:    327
+! SUMMARY-  open_shell .................................................:      2
+! SUMMARY-  oriented_closed_shell ......................................:     21
+! SUMMARY-  oriented_edge ..............................................:  39308
+! SUMMARY-  plane ......................................................:   4711
+! SUMMARY-  plane_angle_measure_with_unit ..............................:    331
+! SUMMARY-  plane_angle_unit_and_si_unit ...............................:    331
+! SUMMARY-  product ....................................................:    153
+! SUMMARY-  product_context ............................................:    153
+! SUMMARY-  product_definition .........................................:    153
+! SUMMARY-  product_definition_context .................................:    153
+! SUMMARY-  product_definition_formation ...............................:    153
+! SUMMARY-  product_definition_shape ...................................:    480
+! SUMMARY-  product_related_product_category ...........................:    153
+! SUMMARY-  quasi_uniform_curve ........................................:    100
+! SUMMARY-  representation_relationship_with_transformation_and_shape ..:    327
+! SUMMARY-  shape_definition_representation ............................:    153
+! SUMMARY-  shape_representation .......................................:    153
+! SUMMARY-  shape_representation_relationship ..........................:    120
+! SUMMARY-  shell_based_surface_model ..................................:      2
+! SUMMARY-  si_unit_and_solid_angle_unit ...............................:    331
+! SUMMARY-  spherical_surface ..........................................:     55
+! SUMMARY-  toroidal_surface ...........................................:     86
+! SUMMARY-  uncertainty_measure_with_unit ..............................:    331
+! SUMMARY-  vector .....................................................:  11107
+! SUMMARY-  vertex_point ...............................................:  14019
+! SUMMARY-                                                               -------
+! SUMMARY-  Total                                                         301745
+! STATUS-    
+! STATUS-   Converting to Output Form (Phase 2 of 3): 16-APR-2008 12:46:24 PM
+! STATUS-    
+! STATUS-    
+! STATUS-   Generating UG geometry and placing them in parts
+! STATUS-    
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:46:26 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 313698
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\IGUS_3400_Hub_X_Achse_links
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:46:40 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 304809
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 311965
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\Loslagerseite pL 115-+-D017892_ _Endschalter_Slaveseite_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     2
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              3
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:46:40 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 304683
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\Motorflansch axial profiLINE 140-+-D002933_ _Flansch fr PL70..._Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:46:41 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 303930
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\Festlagerlagerseite pL 115-+-D017893_ _Standard_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:46:41 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 299743
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\Grundkrper-+-D017891_ _Hub_0510_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:46:42 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 283602
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 283712
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 283970
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 284228
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 284338
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 294383
+! STATUS-    
+! STATUS-   fixing vertex off curve and/or edge reversed faults
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\Schlitten pL 115-+-D017894_ _Schaltfahne_Slaveseite_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     6
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              7
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:46:43 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 283438
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\Profil Spannelement 140 neu-+-D055411_ _mit zwei Bohrungen fr Doku_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:46:43 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 281060
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\Profil Spannelement 140 neu-+-D055411_ _PDB_1019192_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:46:44 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 278643
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\Zwischenplatte_X_Achse
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:46:44 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 278248
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\AlphaGetriebe 10-2_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:46:44 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 277116
+! STATUS-    
+! STATUS-   fixing face-face inconsistency faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13816 - RTSTFF: Face-Face inconsistency.
+! WARNING-  solid body contains fault: 13816 - RTSTFF: Face-Face inconsistency.
+! WARNING-  solid body contains fault: 13816 - RTSTFF: Face-Face inconsistency.
+! WARNING-  solid body contains fault: 13816 - RTSTFF: Face-Face inconsistency.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\097-505_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:46:44 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 276162
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\Siemens-M oBr 1FK7022-5AK71-1LG3-Z-1_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:46:44 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 275457
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\DIN 912 - M5 x 20-1_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:46:45 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 274953
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\DIN 125-1 - B 5.3-1_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:46:45 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 274773
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\DIN 6912 - M5 x 16-1_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:46:45 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 274174
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\N_912_M 6 x 25
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:46:45 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 273636
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\Mitnehmer_igus_Y_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:46:45 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 272658
+! STATUS-    
+! INFO-     Degeneracy in b-spline entity 269768 was corrected at or around these
+! INFO-     locations.  A shape change has resulted:
+! INFO-         -12.499993 12.499993 -90.250000
+! INFO-     Degeneracy in b-spline entity 269811 was corrected at or around these
+! INFO-     locations.  A shape change has resulted:
+! INFO-         -12.499993 12.500007 -95.750000
+! INFO-     Degeneracy in b-spline entity 269941 was corrected at or around these
+! INFO-     locations.  A shape change has resulted:
+! INFO-         -12.499993 29.499993 -90.250000
+! INFO-     Degeneracy in b-spline entity 269990 was corrected at or around these
+! INFO-     locations.  A shape change has resulted:
+! INFO-         -12.500007 29.499993 -95.750000
+! INFO-     Degeneracy in b-spline entity 270041 was corrected at or around these
+! INFO-     locations.  A shape change has resulted:
+! INFO-         -12.500007 12.500007 -90.250000
+! INFO-     Degeneracy in b-spline entity 270106 was corrected at or around these
+! INFO-     locations.  A shape change has resulted:
+! INFO-         -12.499993 12.499993 -3.250000
+! INFO-     Degeneracy in b-spline entity 270155 was corrected at or around these
+! INFO-     locations.  A shape change has resulted:
+! INFO-         -12.499993 12.500007 -8.750000
+! INFO-     Degeneracy in b-spline entity 270375 was corrected at or around these
+! INFO-     locations.  A shape change has resulted:
+! INFO-         -12.499993 29.500007 -95.750000
+! INFO-     Degeneracy in b-spline entity 270475 was corrected at or around these
+! INFO-     locations.  A shape change has resulted:
+! INFO-         -12.499993 29.499993 -3.250000
+! INFO-     Degeneracy in b-spline entity 270524 was corrected at or around these
+! INFO-     locations.  A shape change has resulted:
+! INFO-         -12.499993 29.500007 -8.750000
+! INFO-     Degeneracy in b-spline entity 270628 was corrected at or around these
+! INFO-     locations.  A shape change has resulted:
+! INFO-         -12.500007 29.499993 -8.750000
+! INFO-     Degeneracy in b-spline entity 270679 was corrected at or around these
+! INFO-     locations.  A shape change has resulted:
+! INFO-         -12.500007 12.500007 -3.250000
+! INFO-     Degeneracy in b-spline entity 271161 was corrected at or around these
+! INFO-     locations.  A shape change has resulted:
+! INFO-         -212.499993 155.499993 -90.250000
+! INFO-     Degeneracy in b-spline entity 271195 was corrected at or around these
+! INFO-     locations.  A shape change has resulted:
+! INFO-         -212.499993 155.500007 -95.750000
+! INFO-     Degeneracy in b-spline entity 271309 was corrected at or around these
+! INFO-     locations.  A shape change has resulted:
+! INFO-         -212.499993 138.499993 -90.250000
+! INFO-     Degeneracy in b-spline entity 271343 was corrected at or around these
+! INFO-     locations.  A shape change has resulted:
+! INFO-         -212.499993 138.500007 -95.750000
+! INFO-     Degeneracy in b-spline entity 271418 was corrected at or around these
+! INFO-     locations.  A shape change has resulted:
+! INFO-         -212.499993 155.499993 -3.250000
+! INFO-     Degeneracy in b-spline entity 271464 was corrected at or around these
+! INFO-     locations.  A shape change has resulted:
+! INFO-         -212.499993 155.500007 -8.750000
+! INFO-     Degeneracy in b-spline entity 271528 was corrected at or around these
+! INFO-     locations.  A shape change has resulted:
+! INFO-         -212.499993 138.499993 -3.250000
+! INFO-     Degeneracy in b-spline entity 271574 was corrected at or around these
+! INFO-     locations.  A shape change has resulted:
+! INFO-         -212.499993 138.500007 -8.750000
+! INFO-     Degeneracy in b-spline entity 271637 was corrected at or around these
+! INFO-     locations.  A shape change has resulted:
+! INFO-         -212.500007 138.499993 -95.750000
+! INFO-     Degeneracy in b-spline entity 272008 was corrected at or around these
+! INFO-     locations.  A shape change has resulted:
+! INFO-         -212.500007 138.499993 -8.750000
+! INFO-     Degeneracy in b-spline entity 272065 was corrected at or around these
+! INFO-     locations.  A shape change has resulted:
+! INFO-         -212.500007 155.500007 -3.250000
+! INFO-     Degeneracy in b-spline entity 272114 was corrected at or around these
+! INFO-     locations.  A shape change has resulted:
+! INFO-         -212.500007 155.500007 -90.250000
+! INFO-     Degeneracy in b-spline entity 272302 was corrected at or around these
+! INFO-     locations.  A shape change has resulted:
+! INFO-         -212.500007 155.499993 -95.750000
+! INFO-     Degeneracy in b-spline entity 272338 was corrected at or around these
+! INFO-     locations.  A shape change has resulted:
+! INFO-         -212.500007 138.500007 -90.250000
+! INFO-     Degeneracy in b-spline entity 272406 was corrected at or around these
+! INFO-     locations.  A shape change has resulted:
+! INFO-         -212.500007 155.499993 -8.750000
+! INFO-     Degeneracy in b-spline entity 272454 was corrected at or around these
+! INFO-     locations.  A shape change has resulted:
+! INFO-         -212.500007 138.500007 -3.250000
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\IGUS_400_Hub_Z_Achse_links
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:46:46 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 265933
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13828 - RTSTSH: Inconsistent shells.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\IGUS_500_Hub_Y_Achse_links
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:46:47 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 262861
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\NONEC
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:46:47 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 257378
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\NONEB
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:46:47 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 256416
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\Adapter_YZ_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:46:48 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 254919
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\Ameco_Winkel_Y_Achse
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:46:48 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 254278
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\1FK7 032 Bremse_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:46:48 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 252726
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\Aussteifung
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:46:48 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 252270
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\Mitnemer_igus_Z_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:46:48 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 251805
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\Rinne_Y
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:46:49 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 251096
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\Mitnemer_igus_z_bew_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:46:49 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 250640
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\VN3027-626_Schaltfahne
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:46:49 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 250108
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\3SE2-210-86V00_Rollenschwenkhebel_3
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:46:49 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 248073
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\3SE2-210-86V00_Rollenschwenkhebel_2
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:46:50 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 244026
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\3SE2-210-86V00_Rollenschwenkhebel_1
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:46:50 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 238461
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\3RK2400-1BT30_ASi_Siemens
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:46:51 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 236153
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\533926 QS-F-M7-6-I
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:46:51 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 234987
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\533851 QSL-F-M7-4
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:46:51 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 233667
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\PRODUCT_NAME_1
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:46:52 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 231629
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\161418 UC-M7
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:46:52 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 231154
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\34997 KMYZ-2-24-2,5
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:46:52 PM
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\PRODUCT_NAME_5
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              0
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:46:52 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 229182
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\PRODUCT_NAME_4
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:46:52 PM
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\PRODUCT_NAME_3
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              0
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:46:52 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 227589
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\691296_GLAS mit Barcode
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:46:53 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 226944
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\150366 SIEN-4B-PO-K-L
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:46:53 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 211054
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 211209
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 211364
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 211749
+! STATUS-    
+! STATUS-   fixing face-face inconsistency faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13816 - RTSTFF: Face-Face inconsistency.
+! WARNING-  solid body contains fault: 13816 - RTSTFF: Face-Face inconsistency.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 211863
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 212294
+! STATUS-    
+! STATUS-   fixing face-face inconsistency faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13816 - RTSTFF: Face-Face inconsistency.
+! WARNING-  solid body contains fault: 13816 - RTSTFF: Face-Face inconsistency.
+! WARNING-  solid body contains fault: 13816 - RTSTFF: Face-Face inconsistency.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 212497
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 212652
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 212797
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 212911
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 226634
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\SB32-D210924
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:    11
+! SUMMARY-                                 -----
+! SUMMARY-  Total                             12
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:00 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 191594
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 191680
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 191772
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 191864
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 192010
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 192156
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 192242
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 192334
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 192426
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 192572
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 192718
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 192824
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 192930
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 193016
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 193108
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 193214
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 193300
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 193392
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 193478
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 193564
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 193650
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 193756
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 210705
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\NONEL
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:    23
+! SUMMARY-                                 -----
+! SUMMARY-  Total                             24
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:03 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 191403
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\I
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:03 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 190470
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\162991 GRLA-M5-QS-4-LF-B
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:03 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 189160
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\B168-001_Standard_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:03 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 176667
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 176759
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 176851
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 177023
+! STATUS-    
+! STATUS-   fixing face-face inconsistency faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13816 - RTSTFF: Face-Face inconsistency.
+! WARNING-  solid body contains fault: 13816 - RTSTFF: Face-Face inconsistency.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 177095
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 177283
+! STATUS-    
+! STATUS-   fixing face-face inconsistency faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13816 - RTSTFF: Face-Face inconsistency.
+! WARNING-  solid body contains fault: 13816 - RTSTFF: Face-Face inconsistency.
+! WARNING-  solid body contains fault: 13816 - RTSTFF: Face-Face inconsistency.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 177375
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 177467
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 177549
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 177621
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 188293
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\SB32-D
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:    11
+! SUMMARY-                                 -----
+! SUMMARY-  Total                             12
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:05 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 176527
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\NONEI
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:05 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 176357
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\NONEF
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:06 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 176211
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\NONEE
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:06 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 176065
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\NONED
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:06 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 175834
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\SB32-1-B_SV_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:06 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 174282
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\B168-004_Standard_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:06 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 173302
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\Festo_Steckverschraubung_QSML-M5-6_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:07 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 172092
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\Zwischenplatte_GP608_SB32_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:07 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 171347
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\Greifer_Adapter_Platte_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:07 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 170200
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\195612_DGEA_25_500_ZR____A__Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:08 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 167190
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\195612_DGEA_G____GW__Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:08 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 165853
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\195612_DGEA_25_500_ZR_GHR____K__Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:09 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 158853
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\VN3027-627_Motorflansch
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:09 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 158264
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\525866 DGEA-25-YSR---_asm_13
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:09 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 157427
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\525866 DGEA-25-YSR---_asm_12
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:09 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 156318
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\525866 DGEA-25-YSR---_asm_11
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:09 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 155503
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\525866 DGEA-25-YSR---_asm_10
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:10 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 154378
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\525866 DGEA-25-YSR---_asm_9
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:10 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 153563
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\525866 DGEA-25-YSR---_asm_8
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:10 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 152400
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\525866 DGEA-25-YSR---_asm_7
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:10 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 151237
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\525866 DGEA-25-YSR---_asm_6
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:11 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 150074
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\525866 DGEA-25-YSR---_asm_5
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:11 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 148911
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\525866 DGEA-25-YSR---_asm_4
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:11 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 147748
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\525866 DGEA-25-YSR---_asm_3
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:12 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 146585
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\525866 DGEA-25-YSR---_asm_2
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:12 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 145562
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\525866 DGEA-25-YSR---_asm_1
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:12 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 144524
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\153496 LRMA-QS-6
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:12 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 142616
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\ASi-Knoten_4E-4A
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:13 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 139673
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\Ple60-+-D002104_ _PDB_732320_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:13 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 138582
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\Abdeckung-+-D001167_ _PDB_732284_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:13 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 138166
+! STATUS-    
+! STATUS-   fixing vertex off curve and/or edge reversed faults
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13828 - RTSTSH: Inconsistent shells.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\Antrieb-umlenk160light-+-D013495_ _Umlenk_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:15 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 121581
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\Positionsschalter_2-+-D030904_ _+90 Grad_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:15 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 109085
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\Lagerabdeckung-+-D007200_ _PDB_1019278_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:16 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 108122
+! STATUS-    
+! INFO-     Degeneracy in b-spline entity 106744 was corrected at or around these
+! INFO-     locations.  A shape change has resulted:
+! INFO-         7.500000 92.000007 77.499993
+! INFO-     Degeneracy in b-spline entity 107104 was corrected at or around these
+! INFO-     locations.  A shape change has resulted:
+! INFO-         -32.500000 134.000007 77.499993
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\H64030910000-000_00_000_AC-Motor_1FK7042-5AF71-1EG2_Steckerabgang axial AS
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:16 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 106550
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\Riemengetriebe Light-+-D010750_L_457.5 _i_1_1_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:16 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 105891
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\Stecker_winkel-+-D001135_ _PDB_725164_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:17 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 97181
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\Einbaustecker-+-D000789_ _5-Polig male_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:17 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 95093
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\Halteblech-+-D000790_ _Halteblech_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:17 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 94233
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\iso 7380-+-D000752_ _M3 x 8_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:17 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 93699
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\NONEH
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:17 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 93486
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\NONEG
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:18 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 88906
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\Grundkrper160-15_alt_light-+-D062967_ _Riemen_50mm_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:18 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 85078
+! STATUS-    
+! STATUS-   fixing vertex off curve and/or edge reversed faults
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13828 - RTSTSH: Inconsistent shells.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\Antrieb-umlenk160light-+-D013495_ _Antrieb links_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:20 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 68510
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\Schalterleiste_neu-+-D043197_ _PDB_1045907_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:20 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 67964
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\Zwischenflansch_Modul_80_15-+-D055731_ _PDB_1052562_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:20 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 67281
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\Halteplatte mechanischer Endschalter-+-D041729_ _PDB_1045882_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:20 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 66592
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\Positionsschalter_2-+-D030904_ _-90 Grad_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:21 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 54135
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\Lagerabdeckung-+-D042798_ _PDB_1043375_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:21 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 53361
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\40x80x5_Rohr1_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:22 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 52320
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\40x80x5_Rohr1_Standard-kurz
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:22 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 51649
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\40x80x5_Rohr2_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:22 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 50684
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\40x80x5_Rohr3_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:22 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 49464
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\N_933_M 10 x 40
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:22 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 48662
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\512.01.104-01_Rinne
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:23 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 47384
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\512.01.102-01_Winkel
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:23 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 46278
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\N_7991_M 4 x 16
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:23 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 45842
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\N_912_12.9_M 4 x 20
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:23 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 45142
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\N_125_M 8 B
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:23 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 44844
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\N_912_12.9_M 8 x 20
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:23 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 44209
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\512.01.105-01_Winkel
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:23 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 43453
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\N_912_12.9_M 6 x 25
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:24 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 42890
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\N_125_M 4 B
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:24 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 42674
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\N_934_M 6
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:24 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 41880
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\NONEK
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:25 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 33573
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\Winkel_8_80x80_Zn_0_0_411_25_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:26 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 9080
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13801 - RTSTNG: Body is inside out.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 25466
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 25552
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13801 - RTSTNG: Body is inside out.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 25724
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13801 - RTSTNG: Body is inside out.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 25810
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13801 - RTSTNG: Body is inside out.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 25882
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 25968
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13801 - RTSTNG: Body is inside out.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 26040
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13825 - RTSTMV: Missing vertex at surface singularity.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 26126
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! WARNING-  solid body contains fault: 13801 - RTSTNG: Body is inside out.
+! WARNING-  solid body (Unnamed) contains faults that could not be corrected
+! WARNING-   
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\Nivellierung_Type_160_15_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     9
+! SUMMARY-                                 -----
+! SUMMARY-  Total                             10
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:28 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 8790
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\N_934_M 4
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:29 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 7881
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\item40x40x300_leicht1_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:29 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 2763
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\N_912_12.9_M 6 x 16
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:29 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 2199
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\512.01.103-01_Winkel
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:30 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 1285
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\N_934_M 16
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:30 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 487
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\Einstellfu_S____S_x40_Gewinde_M16x81_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:30 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 300
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\Einstellfu_S____S_x43_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:30 PM
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\IEF_pl115_510Hub_hinten250_5res
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Component ...................:     7
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              8
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:30 PM
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\097-055_ Getr-M oBr 1FK7022-5AK71-1LG3-Z_DGE40_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Component ...................:    15
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                             16
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:30 PM
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\Staender_FESTO_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Component ...................:     2
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              3
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:31 PM
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\3SE2-210-86V00_Rollenschwenkhebel
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Component ...................:     3
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              4
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:31 PM
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\533151 CPE10-M1BH-5-3B-QS4-B
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Component ...................:     8
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              9
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:31 PM
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\sb32_c_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Component ...................:     7
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              8
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:31 PM
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\sb32_c_StandardA
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Component ...................:     1
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:31 PM
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\Ver2_sb32-sv_Standard_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Component ...................:     6
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              7
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:31 PM
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\GP608NC_AUF_mib_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Component ...................:     1
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:31 PM
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\sb32_c_Standard_rechts
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Component ...................:     2
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              3
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:31 PM
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\Ver2_sb32-sv_Standard_rechts
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Component ...................:     6
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              7
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:31 PM
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\Ver2_Greifer_SB32_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Component ...................:    12
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                             13
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:32 PM
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\Greifereinheit m Flasche
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Component ...................:     2
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              3
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:32 PM
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\195612_DGEA_25_500_ZR_GHR_____asm_0__Z0
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Component ...................:     3
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              4
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:32 PM
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\_Z-Achse kompl
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Component ...................:     3
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              4
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:32 PM
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\525866 DGEA-25-YSR---_asm_
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Component ...................:    13
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                             14
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:32 PM
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\NU_FLP_Greifereinheit
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Component ...................:    38
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                             39
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:32 PM
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\mechanischer Endlagenschalter-+-D043166_ _+90Grad_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Component ...................:     2
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              3
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:32 PM
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\Steckerblech kplt-+-D000791_ _Anschlublech_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Component ...................:     4
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              5
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:32 PM
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\Steckerblech mit Stecker-+-D010279_ _0_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Component ...................:     2
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              3
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:33 PM
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\MIB_Schlittenlight160_15_300_1-+-D014958_ _Zeichnungsansicht_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Component ...................:     2
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              3
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:33 PM
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\mechanischer Endlagenschalter-+-D043166_ _-90Grad_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Component ...................:     2
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              3
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:33 PM
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\NU_FLP_Lineareinheit
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Component ...................:    17
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                             18
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:33 PM
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\512.01.101-01_Grundgestell_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Component ...................:     1
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:33 PM
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\512.01.106-01_Kippsicherung_Standard-kurz
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Component ...................:     3
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              4
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:33 PM
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\Stellfuss_D40_M16x81_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Component ...................:     2
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              3
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:33 PM
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\Kippsicherung_Standard-kurz
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Component ...................:     5
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              6
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:33 PM
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\512.01.106-01_Kippsicherung_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Component ...................:     3
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              4
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:33 PM
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\Kippsicherung_Standard
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Component ...................:     5
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              6
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:34 PM
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\NU_FLP_Grundgestell
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Component ...................:   147
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                            148
+! STATUS-   Creating the UG part (Phase 3 of 3): 16-APR-2008  12:47:34 PM
+! INFO-     Filing Part ..: D:\SmA_3D\NX5\Flaschenpicker\Flaschenpicker_Nuernberg.prt
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Component ...................:     3
+! SUMMARY-  Reference Set ...............:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              4
+! INFO-      
+! INFO-     Total number of solids input for this translation       :       176
+! INFO-      
+! INFO-     Number of solids created without body validation faults :       110
+! INFO-      
+! INFO-     Number of solids created with body validation fault(s)  :        66
+! INFO-      
+! INFO-     Number of solids ending up as sheet bodies              :         0
+! INFO-      
+! INFO-     End of Translation: 16-APR-2008  12:47:36 PM
+! INFO-      

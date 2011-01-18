@@ -1,0 +1,315 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Siemens.HCSS.Logging</name>
+    </assembly>
+    <members>
+        <member name="T:Siemens.HCSS.Logging.NullLogger">
+            <summary>
+            Summary description for NullLogger.
+            </summary>
+        </member>
+        <member name="T:Siemens.HCSS.Logging.ILogger">
+            <summary>
+            ILogger describes the common logging interface to be used 
+            by HCSS and HCSS-based components. 
+            For more information refer to the <b>Remarks</b> section.
+            </summary>
+            <remarks>
+            Logging is level-based. 
+            The levels define the priority of the information to be logged.
+            
+            The logging occurs in so-called channels.
+            This enables the distribution of logged information.
+            A log-channel can be prepared to accept log-requests
+            from a minimum LogLevel including levels with higher priority
+            and to suppress log-requests from lower levels.
+            
+            The default-log channel is assigned to the process the components live in.
+            In this case all information of any component running in the process
+            is logged chronologically into one target (usually a text file). 
+            This is useful to relate the integrated components to each other and is 
+            therefore commonly the best way to find bugs an anomalies at runtime.
+            
+            Each component can demand an own channel. Then all output of all components
+            using the same channel is logged chronologically into this channel (usually
+            a text file) that is separated from the default-channel.
+            
+            The advantage of using multiple channels is the possibility to prepare
+            the acceptance-level of each channel independently.   
+            
+            The concrete implementation of the logging functionality is decoupled 
+            and exchangeable through configuration of the Logging Assembly.
+            An instance of an object implementing the ILogger-interface is obtained
+            by using "Siemens.HCSS.Logging.LogManager.GetLoggerInstance()".
+            
+            The degree of log-channel-configuration depends on the concrete implementation.
+            </remarks>
+        </member>
+        <member name="M:Siemens.HCSS.Logging.ILogger.IsAccepted(Siemens.HCSS.Logging.LogLevel)">
+            <summary>
+            Check whether the log-channel will accept 
+            a log-request for the given LogLevel
+            i.e. the LogLevel to inspect is >= the LogLevel assigned to the log-channel.
+            </summary>
+            <param name="level"> 
+            LogLevel to inspect 
+            </param>
+            <returns>
+            Returns true if the LogLevel is accepted, false otherwise
+            </returns>
+        </member>
+        <member name="M:Siemens.HCSS.Logging.ILogger.GetAcceptanceLevel">
+            <summary>
+            Inspect the acceptance-level of the log-channel
+            </summary>
+            <returns> 
+            Returns the LogLevel that is currently assigned to the log-channel
+            </returns>
+        </member>
+        <member name="M:Siemens.HCSS.Logging.ILogger.SetAcceptanceLevel(Siemens.HCSS.Logging.LogLevel)">
+            <overloads>
+            Set the acceptance-level of the log-channel
+            </overloads>
+            <summary>
+            Set the acceptance-level of the log-channel
+            </summary>
+            <param name="level"> 
+            The minimum LogLevel that is accepted.
+            This level refers to the current log-object instance only.
+            </param>
+        </member>
+        <member name="M:Siemens.HCSS.Logging.ILogger.SetAcceptanceLevel(Siemens.HCSS.Logging.LogLevel,System.Boolean)">
+            <summary>
+            Set the acceptance-level of the log-channel
+            and conditionally the acceptance-level of
+            descendant log-object instances
+            </summary>
+            <param name="level"> 
+            The minimum LogLevel that is accepted 
+            </param>
+            <param name="recurse">
+            true, if the level should be inherited 
+            by descendant log-object instances
+            </param>
+        </member>
+        <member name="M:Siemens.HCSS.Logging.ILogger.Log(System.Object)">
+            <overloads>
+            Log-request to a log-channel 
+            </overloads>
+            <summary>
+            Log-request to the log-channel using the default-log-level INFORMATION 
+            </summary>
+            <param name="msg"> 
+            message object to be logged 
+            </param>
+        </member>
+        <member name="M:Siemens.HCSS.Logging.ILogger.Log(System.Exception)">
+            <summary>
+            Log-request to the log-channel using the default-log-level INFORMATION
+            </summary>
+            <param name="ex"> 
+            Exception object to be logged
+            </param>
+        </member>
+        <member name="M:Siemens.HCSS.Logging.ILogger.Log(System.Object,System.Exception)">
+            <summary>
+            Log-request to the log-channel using the default-log-level INFORMATION
+            </summary>
+            <param name="msg"> 
+            message object to be logged as prefix for ex
+            </param>
+            <param name="ex"> 
+            Exception object to be logged
+            </param>
+        </member>
+        <member name="M:Siemens.HCSS.Logging.ILogger.Log(System.Object,Siemens.HCSS.Logging.LogLevel)">
+            <summary>
+            Log-request to the log-channel using the given log-level
+            </summary>
+            <param name="msg"> 
+            message to be logged. 
+            </param>
+            <param name="level"> 
+            level of log-request 
+            </param>
+        </member>
+        <member name="M:Siemens.HCSS.Logging.ILogger.Log(System.Exception,Siemens.HCSS.Logging.LogLevel)">
+            <summary>
+            Log-request to the log-channel using the given log-level
+            </summary>
+            <param name="ex"> 
+            Exception object to be logged.
+            </param>
+            <param name="level"> 
+            level of log-request 
+            </param>
+        </member>
+        <member name="M:Siemens.HCSS.Logging.ILogger.Log(System.Object,System.Exception,Siemens.HCSS.Logging.LogLevel)">
+            <summary>
+            Log-request to the log-channel using the given log-level
+            </summary>
+            <param name="msg"> 
+            message object to be logged as prefix for ex.
+            </param>
+            <param name="ex"> 
+            Exception object to be logged.
+            </param>
+            <param name="level"> 
+            level of log-request
+            </param>
+        </member>
+        <member name="T:Siemens.HCSS.Logging.LogLevel">
+            <summary>
+            The LogLevel defines the priority of both 
+            the level of a log-request and 
+            the acceptance-level of a log-channel.
+            The default acceptance-level of a log-channel is INFORMATION.
+            </summary>
+        </member>
+        <member name="F:Siemens.HCSS.Logging.LogLevel.UNKNOWN">
+            <summary>
+            unknown level
+            </summary>
+        </member>
+        <member name="F:Siemens.HCSS.Logging.LogLevel.DEBUG">
+            <summary>
+            verbose output for debugging purposes
+            </summary>
+        </member>
+        <member name="F:Siemens.HCSS.Logging.LogLevel.INFORMATION">
+            <summary>
+            output for normal operating state
+            </summary>
+        </member>
+        <member name="F:Siemens.HCSS.Logging.LogLevel.WARNING">
+            <summary>
+            component or functionality may work restricted 
+            or warns about errors that may follow
+            </summary>
+        </member>
+        <member name="F:Siemens.HCSS.Logging.LogLevel.ERROR">
+            <summary>
+            component or functionality will work restricted
+            or incorrect but will continue work
+            </summary>
+        </member>
+        <member name="F:Siemens.HCSS.Logging.LogLevel.FATAL">
+            <summary>
+            component or functionality detected a fatal error condition 
+            and will refuse to continue work
+            </summary>
+        </member>
+        <member name="T:Siemens.HCSS.Logging.LogManager">
+            <summary>
+            The LogManager creates an instance of the ILogger implementation.
+            The Assembly containing this implementation is configurable.
+            The Default LogLevel is also configurable. 
+            This configuration is done via .net standard configuration file (app.config)
+            <para><example><code>
+            &lt;?xml version="1.0" encoding="utf-8" ?>
+            &lt;configuration>
+              &lt;appSettings>
+                &lt;!-- Configure the LoggingAdapter -->
+                &lt;!-- Common settings -->
+                &lt;add key="Siemens.HCSS.Logging Adapter Assembly" value="Siemens.HCSS.Logging.Log4netAdapter.dll" />
+                &lt;!-- The default LogLevel can be one of: DEBUG, INFORMATION, WARNING, ERROR, FATAL -->
+                &lt;add key="Siemens.HCSS.Logging DefaultLogLevel" value="INFORMATION" />
+              &lt;/appSettings>
+            &lt;/configuration>
+            </code></example></para>
+            </summary>
+        </member>
+        <member name="M:Siemens.HCSS.Logging.LogManager.#ctor">
+            <summary>
+            private constructor to avoid instantiation
+            </summary>
+        </member>
+        <member name="M:Siemens.HCSS.Logging.LogManager.#cctor">
+            <summary>
+            static constructor for one-time initialisation
+            </summary>
+        </member>
+        <member name="M:Siemens.HCSS.Logging.LogManager.GetLoggerInstance(System.Type)">
+            <overloads>
+            Delivers an log-object instance
+            </overloads>
+            <summary>
+            Loads the configured assembly and 
+            creates an instance of the object 
+            that implements the ILogger interface
+            </summary>
+            <param name="logOrigin"> 
+            Type of usually the class that declares the logger.
+            The property "FullName" of the given type is used
+            to identify the origin of the log-output.
+            </param>
+            <returns>
+            ILogger instance on success, null otherwise
+            </returns>
+        </member>
+        <member name="M:Siemens.HCSS.Logging.LogManager.GetLoggerInstance(System.String)">
+            <summary>
+            Loads the configured assembly and 
+            creates an instance of the object 
+            that implements the ILogger interface
+            </summary>
+            <param name="logOrigin"> 
+            String to identify the origin of the log-output
+            </param>
+            <returns>
+            ILogger instance on success, null otherwise
+            </returns>
+        </member>
+        <member name="M:Siemens.HCSS.Logging.LogManager.GetLoggerInstance(System.Type,System.Reflection.Assembly)">
+            <summary>
+            Loads the configured assembly and 
+            creates an instance of the object 
+            that implements the ILogger interface
+            </summary>
+            <param name="logOrigin">
+            Type of usually the class that declares the logger.
+            The property "FullName" of the given type is used
+            to identify the origin of the log-output.
+            </param>
+            <param name="assembly">
+            Assembly that holds the class.
+            Typically "System.Reflection.Assembly.GetExecutingAssembly()"
+            The BaseName of this assembly is used to name the log-channel. 
+            </param>
+            <returns>
+            ILogger instance on success, null otherwise
+            </returns>
+        </member>
+        <member name="M:Siemens.HCSS.Logging.LogManager.GetLoggerInstance(System.Type,System.String)">
+            <summary>
+            Loads the configured assembly and 
+            creates an instance of the object 
+            that implements the ILogger interface
+            </summary>
+            <param name="logOrigin">
+            String to identify the origin of the log-output
+            </param>
+            <param name="channel">
+            String to name the log-channel
+            </param>
+            <returns></returns>
+        </member>
+        <member name="M:Siemens.HCSS.Logging.LogManager.GetLoggerInstance(System.String,System.String)">
+            <summary>
+            Loads the configured assembly and 
+            creates an instance of the object 
+            that implements the ILogger interface
+            </summary>
+            <param name="logOrigin"> 
+            String to identify the origin of the log-output
+            </param>
+            <param name="channel"> 
+            String to name the log-channel
+            </param>
+            <returns>
+            ILogger instance on success, null otherwise
+            </returns>
+        </member>
+    </members>
+</doc>
