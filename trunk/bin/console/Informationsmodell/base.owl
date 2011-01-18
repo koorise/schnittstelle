@@ -1,0 +1,1067 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+    xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+    xmlns:base="http://localhost/ontologies/base.owl#"
+    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xml:base="http://localhost/ontologies/base.owl">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="http://localhost/ontologies/units.owl"/>
+  </owl:Ontology>
+  <owl:Class rdf:ID="InternalAssemblyAttribute">
+    <owl:disjointWith>
+      <owl:Class rdf:ID="InternalControlAttribute"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="InternalGeometricAttribute"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="InternalDynamicAttribute"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="InternalDefinitionAttribute"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="InternalElectricalAttribute"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="InternalAppearanceAttribute"/>
+    </owl:disjointWith>
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="InternalAttribute"/>
+    </rdfs:subClassOf>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Determines the internal assembly of an object</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="Feature">
+    <owl:disjointWith>
+      <owl:Class rdf:ID="Component"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="Person"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="InformationProcessor"/>
+    </owl:disjointWith>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >An &lt;i&gt;Entity&lt;/i&gt; that belongs to a &lt;i&gt;Component&lt;/i&gt;, but is not itself a &lt;i&gt;Component.&lt;/i&gt;</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Entity"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="#Component"/>
+        </owl:allValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="hasSuperEntity"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#Component">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Entity"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="hasSubEntity"/>
+        </owl:onProperty>
+        <owl:allValuesFrom>
+          <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+              <owl:Class rdf:about="#Feature"/>
+              <owl:Class rdf:about="#Component"/>
+            </owl:unionOf>
+          </owl:Class>
+        </owl:allValuesFrom>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#InformationProcessor"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Person"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#Feature"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >An object that is physically apparent or has the potential to be physically apparent by purchasing or manufacturing it. The object is technical.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="RelationalControlAttribute">
+    <owl:disjointWith>
+      <owl:Class rdf:ID="RelationalGeometricAttribute"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="RelationalElectricalAttribute"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="RelationalDynamicAttribute"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="RelationalAssemblyAttribute"/>
+    </owl:disjointWith>
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="RelationalAttribute"/>
+    </rdfs:subClassOf>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Determines the characteristics in the overall control structure</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="ElectricalProcess">
+    <owl:disjointWith>
+      <owl:Class rdf:ID="AppearanceProcess"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="DynamicProcess"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="ControlProcess"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="AssemblyProcess"/>
+    </owl:disjointWith>
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Process"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="StructuralControlAttribute">
+    <owl:disjointWith>
+      <owl:Class rdf:ID="StructuralElectricalAttribute"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="StructuralGeometricAttribute"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="StructuralAssemblyAttribute"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="StructuralDynamicAttribute"/>
+    </owl:disjointWith>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Determines the characteristics of an object in the control program that are not apparent in the real world</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="StructuralAttribute"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#InternalControlAttribute">
+    <owl:disjointWith>
+      <owl:Class rdf:about="#InternalGeometricAttribute"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#InternalDynamicAttribute"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#InternalDefinitionAttribute"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#InternalAssemblyAttribute"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#InternalElectricalAttribute"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#InternalAppearanceAttribute"/>
+    </owl:disjointWith>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#InternalAttribute"/>
+    </rdfs:subClassOf>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Determines the internal control characteristics</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="PhysicalComponent">
+    <owl:disjointWith>
+      <owl:Class rdf:ID="LibraryComponent"/>
+    </owl:disjointWith>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >An object that is physically apparent.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#Component"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="hasLibraryComponent"/>
+        </owl:onProperty>
+        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:maxCardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#InternalGeometricAttribute">
+    <owl:disjointWith rdf:resource="#InternalControlAttribute"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#InternalDynamicAttribute"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#InternalDefinitionAttribute"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#InternalAssemblyAttribute"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#InternalElectricalAttribute"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#InternalAppearanceAttribute"/>
+    </owl:disjointWith>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#InternalAttribute"/>
+    </rdfs:subClassOf>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Determines geometric characteristics.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="#StructuralDynamicAttribute">
+    <owl:disjointWith>
+      <owl:Class rdf:about="#StructuralElectricalAttribute"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#StructuralGeometricAttribute"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#StructuralAssemblyAttribute"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#StructuralControlAttribute"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Determines the characteristics of an object in the dynamic simulation that are not apparent in the real world</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#StructuralAttribute"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="ElectricalFeature">
+    <owl:disjointWith>
+      <owl:Class rdf:ID="GeometricFeature"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="AssemblyFeature"/>
+    </owl:disjointWith>
+    <rdfs:subClassOf rdf:resource="#Feature"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom>
+          <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+              <owl:Class rdf:about="#InternalElectricalAttribute"/>
+              <owl:Class rdf:about="#RelationalElectricalAttribute"/>
+            </owl:unionOf>
+          </owl:Class>
+        </owl:someValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="hasAttribute"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A &lt;i&gt;Feature&lt;/i&gt; with &lt;i&gt;InternalElectricalAttributes&lt;/i&gt; or &lt;i&gt;RelationalElectricalAttributes&lt;/i&gt;</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="#InternalElectricalAttribute">
+    <owl:disjointWith rdf:resource="#InternalControlAttribute"/>
+    <owl:disjointWith rdf:resource="#InternalGeometricAttribute"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#InternalDynamicAttribute"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#InternalDefinitionAttribute"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#InternalAssemblyAttribute"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#InternalAppearanceAttribute"/>
+    </owl:disjointWith>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Determines electric characteristics.</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#InternalAttribute"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#StructuralAssemblyAttribute">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Determines the characteristics of an object specific to the the 3D-CAD assembly that are not apparent in the real world</rdfs:comment>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#StructuralElectricalAttribute"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#StructuralGeometricAttribute"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#StructuralDynamicAttribute"/>
+    <owl:disjointWith rdf:resource="#StructuralControlAttribute"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#StructuralAttribute"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#RelationalElectricalAttribute">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Determines the characteristics in the overall electric system</rdfs:comment>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#RelationalGeometricAttribute"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#RelationalDynamicAttribute"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#RelationalControlAttribute"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#RelationalAssemblyAttribute"/>
+    </owl:disjointWith>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#RelationalAttribute"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#Person">
+    <owl:disjointWith rdf:resource="#Component"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#InformationProcessor"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#Feature"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A stakeholder of the technical domain</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Entity"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#AppearanceProcess">
+    <owl:disjointWith>
+      <owl:Class rdf:about="#DynamicProcess"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#ControlProcess"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#AssemblyProcess"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#ElectricalProcess"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Process"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#GeometricFeature">
+    <owl:disjointWith>
+      <owl:Class rdf:about="#AssemblyFeature"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#ElectricalFeature"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A &lt;i&gt;Feature&lt;/i&gt; with &lt;i&gt;InternalGeometricalAttributes&lt;/i&gt; or &lt;i&gt;RelationalElectricalAttributes&lt;/i&gt;</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#Feature"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:someValuesFrom>
+          <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+              <owl:Class rdf:about="#InternalGeometricAttribute"/>
+              <owl:Class rdf:about="#RelationalGeometricAttribute"/>
+            </owl:unionOf>
+          </owl:Class>
+        </owl:someValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#hasAttribute"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#StructuralGeometricAttribute">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#StructuralAttribute"/>
+    </rdfs:subClassOf>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Determines the characteristics of an object specific to the the 3D-CAD that are not apparent in the real world</rdfs:comment>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#StructuralElectricalAttribute"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#StructuralAssemblyAttribute"/>
+    <owl:disjointWith rdf:resource="#StructuralDynamicAttribute"/>
+    <owl:disjointWith rdf:resource="#StructuralControlAttribute"/>
+  </owl:Class>
+  <owl:Class rdf:about="#DynamicProcess">
+    <owl:disjointWith rdf:resource="#AppearanceProcess"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#ControlProcess"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#AssemblyProcess"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#ElectricalProcess"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Process"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#InformationProcessor">
+    <owl:disjointWith rdf:resource="#Feature"/>
+    <owl:disjointWith rdf:resource="#Component"/>
+    <owl:disjointWith rdf:resource="#Person"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Entity"/>
+    </rdfs:subClassOf>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >An object with no physical appearance that gathers information and generates output information</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="#AssemblyFeature">
+    <owl:disjointWith rdf:resource="#GeometricFeature"/>
+    <owl:disjointWith rdf:resource="#ElectricalFeature"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A &lt;i&gt;Feature&lt;/i&gt; with &lt;i&gt;InternalAssemblyAttributes&lt;/i&gt; or &lt;i&gt;RelationalAssemblyAttributes&lt;/i&gt;</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#Feature"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#hasAttribute"/>
+        </owl:onProperty>
+        <owl:someValuesFrom>
+          <owl:Class>
+            <owl:unionOf rdf:parseType="Collection">
+              <owl:Class rdf:about="#InternalAssemblyAttribute"/>
+              <owl:Class rdf:about="#RelationalAssemblyAttribute"/>
+            </owl:unionOf>
+          </owl:Class>
+        </owl:someValuesFrom>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class>
+    <owl:unionOf rdf:parseType="Collection">
+      <owl:Class rdf:about="#InternalAttribute"/>
+      <owl:Class rdf:about="#RelationalAttribute"/>
+    </owl:unionOf>
+  </owl:Class>
+  <owl:Class rdf:about="#RelationalAttribute">
+    <owl:disjointWith>
+      <owl:Class rdf:about="#InternalAttribute"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#StructuralAttribute"/>
+    </owl:disjointWith>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:cardinality>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="hasReferenceTo"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Attribute"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="hasSubAttribute"/>
+        </owl:onProperty>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >0</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >0</owl:cardinality>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="hasSuperAttribute"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >An attribute that characterizes an entity in the context of its 
+    environment, i.e. the attribute is dependent of the context/environment of 
+    the entity. The &lt;i&gt;RelationalAttribute &lt;/i&gt;has exactly one reference 
+    entity, as it describes the relation between two entities or processes:
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;i&gt;hasReferenceTo exactly 1&lt;/i&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+    The two properties &lt;i&gt;hasSuperAttribute&lt;/i&gt; and &lt;i&gt;hasSubAttribute&lt;/i&gt; are 
+    not allowed, as all &lt;i&gt;InternalAttributes&lt;/i&gt; shall be equally related to 
+    an &lt;i&gt;Entity&lt;/i&gt; or &lt;i&gt;Process&lt;/i&gt;.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="#AssemblyProcess">
+    <owl:disjointWith rdf:resource="#AppearanceProcess"/>
+    <owl:disjointWith rdf:resource="#DynamicProcess"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#ControlProcess"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#ElectricalProcess"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Process"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#InternalAttribute">
+    <owl:disjointWith rdf:resource="#RelationalAttribute"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#StructuralAttribute"/>
+    </owl:disjointWith>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >An attribute that characterizes an entity intrinsically, i.e. the 
+    attribute is independent of the context/environment of the entity. Thus, 
+    we have:
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;i&gt;hasReferenceTo exacly 0 &lt;/i&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+    The two properties &lt;i&gt;hasSuperAttribute&lt;/i&gt; and &lt;i&gt;hasSubAttribute&lt;/i&gt; are 
+    not allowed, as all &lt;i&gt;InternalAttributes&lt;/i&gt; shall be equally related to 
+    an &lt;i&gt;Entity&lt;/i&gt; or &lt;i&gt;Process&lt;/i&gt;.</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#hasReferenceTo"/>
+        </owl:onProperty>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >0</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Attribute"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >0</owl:cardinality>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#hasSubAttribute"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#hasSuperAttribute"/>
+        </owl:onProperty>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >0</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#Entity">
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Attribute"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Process"/>
+    </owl:disjointWith>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A thing that can be described by &lt;i&gt;Attributes&lt;/i&gt;</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="PhysicalTool">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom>
+          <owl:Class rdf:about="#Process"/>
+        </owl:allValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="isToolOf"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="#PhysicalComponent"/>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="Ressource"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="Product"/>
+    </owl:disjointWith>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A physical component that is required to execute a process</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="TechnicalDocument">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#InternalDefinitionAttribute"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:minCardinality>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:ID="hasValueString"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Document containing technical data</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="#InternalDynamicAttribute">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Determines dynamic characteristics. Includes kinematic characteristics.</rdfs:comment>
+    <owl:disjointWith rdf:resource="#InternalControlAttribute"/>
+    <owl:disjointWith rdf:resource="#InternalGeometricAttribute"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#InternalDefinitionAttribute"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#InternalAssemblyAttribute"/>
+    <owl:disjointWith rdf:resource="#InternalElectricalAttribute"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#InternalAppearanceAttribute"/>
+    </owl:disjointWith>
+    <rdfs:subClassOf rdf:resource="#InternalAttribute"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Process">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom>
+          <owl:Restriction>
+            <owl:onProperty>
+              <owl:FunctionalProperty rdf:ID="isStateAttribute"/>
+            </owl:onProperty>
+            <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+            >true</owl:hasValue>
+          </owl:Restriction>
+        </owl:allValuesFrom>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="hasFinalState"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <owl:disjointWith rdf:resource="#Entity"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Attribute"/>
+    </owl:disjointWith>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A &lt;i&gt;thing&lt;/i&gt; that can change one or more &lt;i&gt;Attributes&lt;/i&gt; over time</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="#ControlProcess">
+    <owl:disjointWith rdf:resource="#AppearanceProcess"/>
+    <owl:disjointWith rdf:resource="#DynamicProcess"/>
+    <owl:disjointWith rdf:resource="#AssemblyProcess"/>
+    <owl:disjointWith rdf:resource="#ElectricalProcess"/>
+    <rdfs:subClassOf rdf:resource="#Process"/>
+  </owl:Class>
+  <owl:Class>
+    <owl:unionOf rdf:parseType="Collection">
+      <owl:Class rdf:about="#Entity"/>
+      <owl:Class rdf:about="#StructuralAttribute"/>
+    </owl:unionOf>
+  </owl:Class>
+  <owl:Class rdf:about="#Product">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A component that is handled by a ressource</rdfs:comment>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Ressource"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#PhysicalTool"/>
+    <rdfs:subClassOf rdf:resource="#PhysicalComponent"/>
+  </owl:Class>
+  <owl:Class rdf:about="#StructuralElectricalAttribute">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#StructuralAttribute"/>
+    </rdfs:subClassOf>
+    <owl:disjointWith rdf:resource="#StructuralGeometricAttribute"/>
+    <owl:disjointWith rdf:resource="#StructuralAssemblyAttribute"/>
+    <owl:disjointWith rdf:resource="#StructuralDynamicAttribute"/>
+    <owl:disjointWith rdf:resource="#StructuralControlAttribute"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Determines the characteristics of an object in circuit diagram that are not apparent in the real world</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="#RelationalGeometricAttribute">
+    <owl:disjointWith rdf:resource="#RelationalElectricalAttribute"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#RelationalDynamicAttribute"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#RelationalControlAttribute"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#RelationalAssemblyAttribute"/>
+    </owl:disjointWith>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Determines the characteristics in the overall geometric model</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#RelationalAttribute"/>
+  </owl:Class>
+  <owl:Class rdf:about="#RelationalDynamicAttribute">
+    <rdfs:subClassOf rdf:resource="#RelationalAttribute"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Determines the characteristics in the overall dynamic system</rdfs:comment>
+    <owl:disjointWith rdf:resource="#RelationalGeometricAttribute"/>
+    <owl:disjointWith rdf:resource="#RelationalElectricalAttribute"/>
+    <owl:disjointWith rdf:resource="#RelationalControlAttribute"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#RelationalAssemblyAttribute"/>
+    </owl:disjointWith>
+  </owl:Class>
+  <owl:Class rdf:about="#StructuralAttribute">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Attribute"/>
+    </rdfs:subClassOf>
+    <owl:disjointWith rdf:resource="#RelationalAttribute"/>
+    <owl:disjointWith rdf:resource="#InternalAttribute"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A &lt;i&gt;StructuralConcept&lt;/i&gt; characterizes a concept used to structure &lt;i&gt;Entities&lt;/i&gt; 
+    or &lt;i&gt;Processes&lt;/i&gt; in the data models of engineering tools. The hierarchy 
+    of &lt;i&gt;StructuralAttributes&lt;/i&gt; is described by the properties &lt;i&gt;hasSuperAttribute&lt;/i&gt; 
+    and &lt;i&gt;hasSubAttribute&lt;/i&gt;. &lt;i&gt;StructuralAttributes&lt;/i&gt; do not have units, 
+    as there is no relation to the real world:
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;i&gt;hasUnit exactly 0 &lt;/i&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;i&gt;StructuralAttributes&lt;/i&gt; do not have a reference &lt;i&gt;Entity&lt;/i&gt; or &lt;i&gt;Process&lt;/i&gt;.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="#InternalAppearanceAttribute">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Determines appearance characteristics</rdfs:comment>
+    <owl:disjointWith rdf:resource="#InternalControlAttribute"/>
+    <owl:disjointWith rdf:resource="#InternalGeometricAttribute"/>
+    <owl:disjointWith rdf:resource="#InternalDynamicAttribute"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#InternalDefinitionAttribute"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#InternalAssemblyAttribute"/>
+    <owl:disjointWith rdf:resource="#InternalElectricalAttribute"/>
+    <rdfs:subClassOf rdf:resource="#InternalAttribute"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Ressource">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A physical component that is directly or indirectly required to change attributes of a product</rdfs:comment>
+    <owl:disjointWith rdf:resource="#PhysicalTool"/>
+    <owl:disjointWith rdf:resource="#Product"/>
+    <rdfs:subClassOf rdf:resource="#PhysicalComponent"/>
+  </owl:Class>
+  <owl:Class rdf:about="#LibraryComponent">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="#InternalAttribute"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:about="#hasAttribute"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="#Component"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:allValuesFrom rdf:resource="#PhysicalComponent"/>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="hasPhysicalComponent"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >An object that has the potential to be physically apparent by purchasing or manufacturing it.</rdfs:comment>
+    <owl:disjointWith rdf:resource="#PhysicalComponent"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Attribute">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:minCardinality>
+        <owl:onProperty>
+          <owl:ObjectProperty rdf:ID="isAttributeOf"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Attributes determine the characteristics of an entity. Attibutes have in 
+    itself no meaning but need to be related to an entity or process. 
+    Therefore we have:
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;i&gt;base:isAttributeOf min 1&lt;/i&gt; .
+      &lt;/li&gt;
+    &lt;/ul&gt;
+    Attributes can have four other object properties:
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;i&gt;hasUnit&lt;/i&gt;: physical Unit that the Attribute relates to (inferred 
+        from the property domain)
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;i&gt;hasReferenceTo (Entity, Process). &lt;/i&gt;(Inferred from property) 
+        Attributes may require a reference to another attribute or to an 
+        entity to have meaning
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;i&gt;hasSubAttribute&lt;/i&gt; (inferred from property). To describe an 
+        attribute hierarchy.
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;i&gt;hasSuperAttribute&lt;/i&gt; (inferred from property). To describe an 
+        attribute hierarchy.
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;i&gt;isRealizedBy &lt;/i&gt;(inferred from property). To describe the physical 
+        realization of an attribute
+      &lt;/li&gt;
+    &lt;/ul&gt;
+    Further object relations are not recommended.</rdfs:comment>
+    <owl:disjointWith rdf:resource="#Entity"/>
+    <owl:disjointWith rdf:resource="#Process"/>
+  </owl:Class>
+  <owl:Class rdf:about="#RelationalAssemblyAttribute">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Determines the characteristics of an object in a superassembly</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#RelationalAttribute"/>
+    <owl:disjointWith rdf:resource="#RelationalGeometricAttribute"/>
+    <owl:disjointWith rdf:resource="#RelationalElectricalAttribute"/>
+    <owl:disjointWith rdf:resource="#RelationalDynamicAttribute"/>
+    <owl:disjointWith rdf:resource="#RelationalControlAttribute"/>
+  </owl:Class>
+  <owl:Class rdf:about="#InternalDefinitionAttribute">
+    <owl:disjointWith rdf:resource="#InternalControlAttribute"/>
+    <owl:disjointWith rdf:resource="#InternalGeometricAttribute"/>
+    <owl:disjointWith rdf:resource="#InternalDynamicAttribute"/>
+    <owl:disjointWith rdf:resource="#InternalAssemblyAttribute"/>
+    <owl:disjointWith rdf:resource="#InternalElectricalAttribute"/>
+    <owl:disjointWith rdf:resource="#InternalAppearanceAttribute"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Determines cross-domain/general characteristics</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="#InternalAttribute"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="#hasSubEntity">
+    <rdfs:range rdf:resource="#Entity"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >For describing the hierarchy of Entities</rdfs:comment>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="#hasSuperEntity"/>
+    </owl:inverseOf>
+    <rdfs:domain rdf:resource="#Entity"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasTool">
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="#isToolOf"/>
+    </owl:inverseOf>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Relates a &lt;i&gt;Process&lt;/i&gt; with the required &lt;i&gt;PhysicalTool &lt;/i&gt;
+    to execute the &lt;i&gt;Process&lt;/i&gt;</rdfs:comment>
+    <rdfs:domain rdf:resource="#Process"/>
+    <rdfs:range rdf:resource="#PhysicalTool"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#hasReferenceTo">
+    <rdfs:range>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Entity"/>
+          <owl:Class rdf:about="#Process"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:range>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:ID="isReferenceOf"/>
+    </owl:inverseOf>
+    <rdfs:domain rdf:resource="#Attribute"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Relates an &lt;i&gt;Attribute&lt;/i&gt; of an &lt;i&gt;Entity&lt;/i&gt; or &lt;i&gt;Process&lt;/i&gt; with its 
+    reference &lt;i&gt;Entity&lt;/i&gt; or &lt;i&gt;Process&lt;/i&gt;</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="isPreconditionStateOf">
+    <rdfs:range rdf:resource="#Process"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:ID="hasPreconditionState"/>
+    </owl:inverseOf>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Relates a &lt;i&gt;Process&lt;/i&gt; and an &lt;i&gt;Attribute&lt;/i&gt; that has to be applicable 
+    for an &lt;i&gt;Entity&lt;/i&gt; before the &lt;i&gt;Process&lt;/i&gt; can start.</rdfs:comment>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#InternalAttribute"/>
+          <owl:Class rdf:about="#RelationalAttribute"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="#isAttributeOf"/>
+    </rdfs:subPropertyOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="isFinalStateOf">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >&lt;p style="margin-top: 0"&gt;
+      Relates a &lt;i&gt;Process&lt;/i&gt; and an &lt;i&gt;Attribute&lt;/i&gt; that is applicable for 
+      an &lt;i&gt;Entity&lt;/i&gt; when the &lt;i&gt;Process&lt;/i&gt; is finished.
+    &lt;/p&gt;</rdfs:comment>
+    <rdfs:range rdf:resource="#Process"/>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="#isAttributeOf"/>
+    </rdfs:subPropertyOf>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="#hasFinalState"/>
+    </owl:inverseOf>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#InternalAttribute"/>
+          <owl:Class rdf:about="#RelationalAttribute"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasExecutedProcess">
+    <rdfs:range rdf:resource="#Process"/>
+    <rdfs:domain rdf:resource="#Entity"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Relates a &lt;i&gt;Process&lt;/i&gt; and an &lt;i&gt;Entity&lt;/i&gt; on which the &lt;i&gt;Process &lt;/i&gt;is 
+    &lt;i&gt;isExecutedOn&lt;/i&gt;</rdfs:comment>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:ID="isExecutedOn"/>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="isRealizationOf">
+    <rdfs:domain rdf:resource="#Entity"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Relates an &lt;i&gt;Attribute&lt;/i&gt; with its physical realization &lt;i&gt;Entity&lt;/i&gt;</rdfs:comment>
+    <rdfs:range rdf:resource="#Attribute"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:ID="isRealizedBy"/>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#hasPreconditionState">
+    <owl:inverseOf rdf:resource="#isPreconditionStateOf"/>
+    <rdfs:domain rdf:resource="#Process"/>
+    <rdfs:range>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#InternalAttribute"/>
+          <owl:Class rdf:about="#RelationalAttribute"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:range>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Relates a &lt;i&gt;Process&lt;/i&gt; and an &lt;i&gt;Attribute&lt;/i&gt; that has to be applicable 
+    for an &lt;i&gt;Entity&lt;/i&gt; before the &lt;i&gt;Process&lt;/i&gt; can start.</rdfs:comment>
+    <rdfs:subPropertyOf>
+      <owl:ObjectProperty rdf:about="#hasAttribute"/>
+    </rdfs:subPropertyOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#hasSubAttribute">
+    <rdfs:domain rdf:resource="#Attribute"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >For describing the hierarchy of Attributes</rdfs:comment>
+    <rdfs:range rdf:resource="#Attribute"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#hasAttribute">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >A &lt;i&gt;Process&lt;/i&gt; or an &lt;i&gt;Entity&lt;/i&gt; can be described by &lt;i&gt;Attributes&lt;/i&gt;</rdfs:comment>
+    <rdfs:range rdf:resource="#Attribute"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="#isAttributeOf"/>
+    </owl:inverseOf>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Process"/>
+          <owl:Class rdf:about="#Entity"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#isRealizedBy">
+    <rdfs:range rdf:resource="#Entity"/>
+    <owl:inverseOf rdf:resource="#isRealizationOf"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Relates an &lt;i&gt;Attribute&lt;/i&gt; with its physical realization &lt;i&gt;Entity&lt;/i&gt;</rdfs:comment>
+    <rdfs:domain rdf:resource="#Attribute"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="hasUnit">
+    <rdfs:domain rdf:resource="#Attribute"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#hasSuperAttribute">
+    <rdfs:domain rdf:resource="#Attribute"/>
+    <rdfs:range rdf:resource="#Attribute"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >For describing the hierarchy of Attributes</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#hasFinalState">
+    <rdfs:subPropertyOf rdf:resource="#hasAttribute"/>
+    <owl:inverseOf rdf:resource="#isFinalStateOf"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >&lt;p style="margin-top: 0"&gt;
+      Relates a &lt;i&gt;Process&lt;/i&gt; and an &lt;i&gt;Attribute&lt;/i&gt; that is applicable for 
+      an &lt;i&gt;Entity&lt;/i&gt; when the &lt;i&gt;Process&lt;/i&gt; is finished.
+    &lt;/p&gt;</rdfs:comment>
+    <rdfs:domain rdf:resource="#Process"/>
+    <rdfs:range>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#InternalAttribute"/>
+          <owl:Class rdf:about="#RelationalAttribute"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#hasPhysicalComponent">
+    <rdfs:range rdf:resource="#PhysicalComponent"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="#hasLibraryComponent"/>
+    </owl:inverseOf>
+    <rdfs:domain rdf:resource="#LibraryComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Relates a  &lt;i&gt;PhysicalComponent&lt;/i&gt; with a   &lt;i&gt;LibraryComponent&lt;/i&gt;</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#isToolOf">
+    <owl:inverseOf rdf:resource="#hasTool"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Relates a &lt;i&gt;Process&lt;/i&gt; with the required &lt;i&gt;PhysicalTool &lt;/i&gt;
+    to execute the &lt;i&gt;Process&lt;/i&gt;</rdfs:comment>
+    <rdfs:range rdf:resource="#Process"/>
+    <rdfs:domain rdf:resource="#PhysicalTool"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#hasSuperEntity">
+    <rdfs:range rdf:resource="#Entity"/>
+    <owl:inverseOf rdf:resource="#hasSubEntity"/>
+    <rdfs:domain rdf:resource="#Entity"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >For describing the hierarchy of Entities</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#isExecutedOn">
+    <rdfs:range rdf:resource="#Entity"/>
+    <owl:inverseOf rdf:resource="#hasExecutedProcess"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Relates a &lt;i&gt;Process&lt;/i&gt; and an &lt;i&gt;Entity&lt;/i&gt; that the &lt;i&gt;Process&lt;/i&gt; is 
+    executed on.</rdfs:comment>
+    <rdfs:domain rdf:resource="#Process"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#isReferenceOf">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Relates an &lt;i&gt;Attribute&lt;/i&gt; of an &lt;i&gt;Entity&lt;/i&gt; or &lt;i&gt;Process&lt;/i&gt; with its 
+    reference &lt;i&gt;Entity&lt;/i&gt; or &lt;i&gt;Process&lt;/i&gt;</rdfs:comment>
+    <rdfs:range rdf:resource="#Attribute"/>
+    <rdfs:domain>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Entity"/>
+          <owl:Class rdf:about="#Process"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:domain>
+    <owl:inverseOf rdf:resource="#hasReferenceTo"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#isAttributeOf">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >An &lt;i&gt;Attribute&lt;/i&gt; relates to an &lt;i&gt;Entity&lt;/i&gt; or a &lt;i&gt;Process&lt;/i&gt;</rdfs:comment>
+    <rdfs:domain rdf:resource="#Attribute"/>
+    <owl:inverseOf rdf:resource="#hasAttribute"/>
+    <rdfs:range>
+      <owl:Class>
+        <owl:unionOf rdf:parseType="Collection">
+          <owl:Class rdf:about="#Entity"/>
+          <owl:Class rdf:about="#Process"/>
+        </owl:unionOf>
+      </owl:Class>
+    </rdfs:range>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="#hasLibraryComponent">
+    <owl:inverseOf rdf:resource="#hasPhysicalComponent"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Relates a  &lt;i&gt;LibraryComponent&lt;/i&gt; with a  &lt;i&gt;PhysicalComponent&lt;/i&gt;</rdfs:comment>
+    <rdfs:range rdf:resource="#LibraryComponent"/>
+    <rdfs:domain rdf:resource="#PhysicalComponent"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="#hasValueString">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:subPropertyOf>
+      <owl:DatatypeProperty rdf:ID="hasValue"/>
+    </rdfs:subPropertyOf>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasValueBoolean">
+    <rdfs:subPropertyOf rdf:resource="#hasValue"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="hasValueFloat">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:subPropertyOf rdf:resource="#hasValue"/>
+  </owl:DatatypeProperty>
+  <owl:FunctionalProperty rdf:about="#isStateAttribute">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </owl:FunctionalProperty>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.4, Build 533)  http://protege.stanford.edu -->

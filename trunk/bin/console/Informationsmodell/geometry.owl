@@ -1,0 +1,680 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+    xmlns:base="http://localhost/ontologies/base.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:geo="http://localhost/ontologies/geometry.owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+    xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://localhost/ontologies/geometry.owl">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="http://localhost/ontologies/base.owl"/>
+  </owl:Ontology>
+  <owl:Class rdf:ID="Width">
+    <owl:disjointWith>
+      <owl:Class rdf:ID="Diameter"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="Depth"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="AbsoluteBoundingBox"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="Height"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="Volume"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="Length"/>
+    </owl:disjointWith>
+    <rdfs:subClassOf rdf:resource="http://localhost/ontologies/base.owl#InternalGeometricAttribute"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://localhost/ontologies/base.owl#hasValueFloat"/>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#Volume">
+    <rdfs:subClassOf rdf:resource="http://localhost/ontologies/base.owl#InternalGeometricAttribute"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:cardinality>
+        <owl:onProperty rdf:resource="http://localhost/ontologies/base.owl#hasValueFloat"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <owl:disjointWith rdf:resource="#Width"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Length"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#AbsoluteBoundingBox"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Depth"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Height"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Diameter"/>
+    </owl:disjointWith>
+  </owl:Class>
+  <owl:Class rdf:ID="Direction">
+    <owl:disjointWith>
+      <owl:Class rdf:ID="Distance"/>
+    </owl:disjointWith>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:maxCardinality>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:ID="hasDirectionZ"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:ID="hasDirectionY"/>
+        </owl:onProperty>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="RelationalBoundingBox"/>
+    </owl:disjointWith>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:cardinality>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:ID="hasDirectionX"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="Orientation"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="NameInAssembly"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="PositionCartesian"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="Workspace"/>
+    </owl:disjointWith>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Direction Vector</rdfs:comment>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="AngularPosition"/>
+    </owl:disjointWith>
+    <rdfs:subClassOf>
+      <rdf:Description rdf:about="http://localhost/ontologies/base.owl#RelationalGeometricAttribute">
+        <rdfs:subClassOf rdf:resource="http://localhost/ontologies/base.owl#RelationalAttribute"/>
+      </rdf:Description>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#NameInAssembly">
+    <owl:disjointWith>
+      <owl:Class rdf:about="#PositionCartesian"/>
+    </owl:disjointWith>
+    <rdfs:subClassOf rdf:resource="http://localhost/ontologies/base.owl#RelationalGeometricAttribute"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The name a component is referenced with in a certain assembly context</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://localhost/ontologies/base.owl#hasValueString"/>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#RelationalBoundingBox"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#AngularPosition"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Orientation"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Workspace"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Distance"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#Direction"/>
+  </owl:Class>
+  <owl:Class rdf:ID="PositionCartesian2D">
+    <rdfs:subClassOf>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Restriction>
+            <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >1</owl:maxCardinality>
+            <owl:onProperty>
+              <owl:DatatypeProperty rdf:ID="hasCoordinateX"/>
+            </owl:onProperty>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty>
+              <owl:DatatypeProperty rdf:ID="hasCoordinateY"/>
+            </owl:onProperty>
+            <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >1</owl:maxCardinality>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty>
+              <owl:DatatypeProperty rdf:ID="hasCoordinateZ"/>
+            </owl:onProperty>
+            <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >1</owl:maxCardinality>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:ID="hasCoordinate"/>
+        </owl:onProperty>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >2</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#PositionCartesian"/>
+    </rdfs:subClassOf>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="PositionCartesian3D"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="PositionCartesian1D"/>
+    </owl:disjointWith>
+  </owl:Class>
+  <owl:Class rdf:about="#AngularPosition">
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Distance"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#PositionCartesian"/>
+    </owl:disjointWith>
+    <rdfs:subClassOf rdf:resource="http://localhost/ontologies/base.owl#RelationalGeometricAttribute"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Workspace"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Orientation"/>
+    </owl:disjointWith>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://localhost/ontologies/base.owl#hasValueFloat"/>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#RelationalBoundingBox"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#Direction"/>
+    <owl:disjointWith rdf:resource="#NameInAssembly"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Diameter">
+    <owl:disjointWith>
+      <owl:Class rdf:about="#AbsoluteBoundingBox"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#Width"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Height"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Depth"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#Volume"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Length"/>
+    </owl:disjointWith>
+    <rdfs:subClassOf rdf:resource="http://localhost/ontologies/base.owl#InternalGeometricAttribute"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:cardinality>
+        <owl:onProperty rdf:resource="http://localhost/ontologies/base.owl#hasValueFloat"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#Distance">
+    <owl:disjointWith>
+      <owl:Class rdf:about="#RelationalBoundingBox"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#AngularPosition"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Workspace"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#Direction"/>
+    <rdfs:subClassOf rdf:resource="http://localhost/ontologies/base.owl#RelationalGeometricAttribute"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Distance between two objects</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:cardinality>
+        <owl:onProperty rdf:resource="http://localhost/ontologies/base.owl#hasValueFloat"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <owl:disjointWith rdf:resource="#NameInAssembly"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Orientation"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#PositionCartesian"/>
+    </owl:disjointWith>
+  </owl:Class>
+  <owl:Class rdf:about="#PositionCartesian3D">
+    <owl:disjointWith rdf:resource="#PositionCartesian2D"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#PositionCartesian1D"/>
+    </owl:disjointWith>
+    <rdfs:subClassOf>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Restriction>
+            <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >1</owl:cardinality>
+            <owl:onProperty>
+              <owl:DatatypeProperty rdf:about="#hasCoordinateX"/>
+            </owl:onProperty>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >1</owl:cardinality>
+            <owl:onProperty>
+              <owl:DatatypeProperty rdf:about="#hasCoordinateY"/>
+            </owl:onProperty>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty>
+              <owl:DatatypeProperty rdf:about="#hasCoordinateZ"/>
+            </owl:onProperty>
+            <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >1</owl:cardinality>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#PositionCartesian"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#Orientation">
+    <rdfs:subClassOf rdf:resource="http://localhost/ontologies/base.owl#RelationalGeometricAttribute"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Workspace"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#RelationalBoundingBox"/>
+    </owl:disjointWith>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Orientation matrix</rdfs:comment>
+    <owl:disjointWith rdf:resource="#Direction"/>
+    <owl:disjointWith rdf:resource="#Distance"/>
+    <owl:disjointWith rdf:resource="#NameInAssembly"/>
+    <owl:disjointWith rdf:resource="#AngularPosition"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#PositionCartesian"/>
+    </owl:disjointWith>
+  </owl:Class>
+  <owl:Class rdf:about="#PositionCartesian1D">
+    <owl:disjointWith rdf:resource="#PositionCartesian3D"/>
+    <owl:disjointWith rdf:resource="#PositionCartesian2D"/>
+    <rdfs:subClassOf>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Restriction>
+            <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >1</owl:maxCardinality>
+            <owl:onProperty>
+              <owl:DatatypeProperty rdf:about="#hasCoordinateX"/>
+            </owl:onProperty>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty>
+              <owl:DatatypeProperty rdf:about="#hasCoordinateY"/>
+            </owl:onProperty>
+            <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >1</owl:maxCardinality>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >1</owl:maxCardinality>
+            <owl:onProperty>
+              <owl:DatatypeProperty rdf:about="#hasCoordinateZ"/>
+            </owl:onProperty>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:about="#hasCoordinate"/>
+        </owl:onProperty>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#PositionCartesian"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="HoleExpression">
+    <rdfs:subClassOf rdf:resource="http://localhost/ontologies/base.owl#InternalGeometricAttribute"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://localhost/ontologies/base.owl#hasUnit"/>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:cardinality>
+        <owl:onProperty rdf:resource="http://localhost/ontologies/base.owl#hasValueFloat"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:onProperty rdf:resource="http://localhost/ontologies/base.owl#hasValueString"/>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:cardinality>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#Depth">
+    <rdfs:subClassOf rdf:resource="http://localhost/ontologies/base.owl#InternalGeometricAttribute"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:cardinality>
+        <owl:onProperty rdf:resource="http://localhost/ontologies/base.owl#hasValueFloat"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <owl:disjointWith rdf:resource="#Volume"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#AbsoluteBoundingBox"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Length"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Height"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#Diameter"/>
+    <owl:disjointWith rdf:resource="#Width"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Length">
+    <owl:disjointWith rdf:resource="#Depth"/>
+    <owl:disjointWith rdf:resource="#Volume"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Height"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#AbsoluteBoundingBox"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#Width"/>
+    <owl:disjointWith rdf:resource="#Diameter"/>
+    <rdfs:subClassOf rdf:resource="http://localhost/ontologies/base.owl#InternalGeometricAttribute"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:cardinality>
+        <owl:onProperty rdf:resource="http://localhost/ontologies/base.owl#hasValueFloat"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#PositionCartesian">
+    <rdfs:subClassOf rdf:resource="http://localhost/ontologies/base.owl#RelationalGeometricAttribute"/>
+    <owl:disjointWith rdf:resource="#NameInAssembly"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#RelationalBoundingBox"/>
+    </owl:disjointWith>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Position of  a component in the overall assembly</rdfs:comment>
+    <owl:disjointWith rdf:resource="#Distance"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Workspace"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#Orientation"/>
+    <owl:disjointWith rdf:resource="#AngularPosition"/>
+    <owl:disjointWith rdf:resource="#Direction"/>
+  </owl:Class>
+  <owl:Class rdf:ID="HoleFeature">
+    <rdfs:subClassOf rdf:resource="http://localhost/ontologies/base.owl#GeometricFeature"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Height">
+    <rdfs:subClassOf rdf:resource="http://localhost/ontologies/base.owl#InternalGeometricAttribute"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:cardinality>
+        <owl:onProperty rdf:resource="http://localhost/ontologies/base.owl#hasValueFloat"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+    <owl:disjointWith rdf:resource="#Length"/>
+    <owl:disjointWith rdf:resource="#Diameter"/>
+    <owl:disjointWith rdf:resource="#Depth"/>
+    <owl:disjointWith rdf:resource="#Volume"/>
+    <owl:disjointWith rdf:resource="#Width"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#AbsoluteBoundingBox"/>
+    </owl:disjointWith>
+  </owl:Class>
+  <owl:Class rdf:about="#AbsoluteBoundingBox">
+    <owl:disjointWith rdf:resource="#Width"/>
+    <owl:disjointWith rdf:resource="#Length"/>
+    <owl:disjointWith rdf:resource="#Diameter"/>
+    <rdfs:subClassOf rdf:resource="http://localhost/ontologies/base.owl#InternalGeometricAttribute"/>
+    <rdfs:subClassOf>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Restriction>
+            <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >1</owl:cardinality>
+            <owl:onProperty>
+              <owl:DatatypeProperty rdf:ID="hasLengthX"/>
+            </owl:onProperty>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty>
+              <owl:DatatypeProperty rdf:ID="hasLengthY"/>
+            </owl:onProperty>
+            <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >1</owl:cardinality>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty>
+              <owl:DatatypeProperty rdf:ID="hasLengthZ"/>
+            </owl:onProperty>
+            <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >1</owl:cardinality>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </rdfs:subClassOf>
+    <owl:disjointWith rdf:resource="#Volume"/>
+    <owl:disjointWith rdf:resource="#Depth"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Bounding box with three dimensions</rdfs:comment>
+    <owl:disjointWith rdf:resource="#Height"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Workspace">
+    <owl:disjointWith rdf:resource="#Direction"/>
+    <owl:disjointWith rdf:resource="#Distance"/>
+    <owl:disjointWith rdf:resource="#AngularPosition"/>
+    <owl:disjointWith rdf:resource="#NameInAssembly"/>
+    <rdfs:subClassOf rdf:resource="http://localhost/ontologies/base.owl#RelationalGeometricAttribute"/>
+    <owl:disjointWith>
+      <owl:Class rdf:about="#RelationalBoundingBox"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#Orientation"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Space that can potentially be occupied by a component</rdfs:comment>
+    <owl:disjointWith rdf:resource="#PositionCartesian"/>
+  </owl:Class>
+  <owl:Class rdf:about="#RelationalBoundingBox">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Bounding box that depends on the overall assembly and its coordinate system</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://localhost/ontologies/base.owl#RelationalGeometricAttribute"/>
+    <owl:disjointWith rdf:resource="#Orientation"/>
+    <owl:disjointWith rdf:resource="#Direction"/>
+    <owl:disjointWith rdf:resource="#Workspace"/>
+    <owl:disjointWith rdf:resource="#NameInAssembly"/>
+    <owl:disjointWith rdf:resource="#Distance"/>
+    <rdfs:subClassOf>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Restriction>
+            <owl:onProperty>
+              <owl:DatatypeProperty rdf:ID="hasMaximumCoordinateX"/>
+            </owl:onProperty>
+            <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >1</owl:cardinality>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >1</owl:cardinality>
+            <owl:onProperty>
+              <owl:DatatypeProperty rdf:ID="hasMaximumCoordinateY"/>
+            </owl:onProperty>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >1</owl:cardinality>
+            <owl:onProperty>
+              <owl:DatatypeProperty rdf:ID="hasMaximumCoordinateZ"/>
+            </owl:onProperty>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </rdfs:subClassOf>
+    <owl:disjointWith rdf:resource="#AngularPosition"/>
+    <rdfs:subClassOf>
+      <owl:Class>
+        <owl:intersectionOf rdf:parseType="Collection">
+          <owl:Restriction>
+            <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >1</owl:cardinality>
+            <owl:onProperty>
+              <owl:DatatypeProperty rdf:ID="hasMinimumCoordinateX"/>
+            </owl:onProperty>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >1</owl:cardinality>
+            <owl:onProperty>
+              <owl:DatatypeProperty rdf:ID="hasMinimumCoordinateY"/>
+            </owl:onProperty>
+          </owl:Restriction>
+          <owl:Restriction>
+            <owl:onProperty>
+              <owl:DatatypeProperty rdf:ID="hasMinimumCoordinateZ"/>
+            </owl:onProperty>
+            <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+            >1</owl:cardinality>
+          </owl:Restriction>
+        </owl:intersectionOf>
+      </owl:Class>
+    </rdfs:subClassOf>
+    <owl:disjointWith rdf:resource="#PositionCartesian"/>
+  </owl:Class>
+  <owl:DatatypeProperty rdf:about="#hasMaximumCoordinateX">
+    <rdfs:subPropertyOf>
+      <owl:DatatypeProperty rdf:ID="hasMaximumCoordinate"/>
+    </rdfs:subPropertyOf>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="#hasMinimumCoordinateZ">
+    <rdfs:subPropertyOf>
+      <owl:DatatypeProperty rdf:ID="hasMinimumCoordinate"/>
+    </rdfs:subPropertyOf>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="#hasLengthY">
+    <rdfs:subPropertyOf>
+      <owl:DatatypeProperty rdf:ID="hasLength"/>
+    </rdfs:subPropertyOf>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="#hasMaximumCoordinateZ">
+    <rdfs:subPropertyOf>
+      <owl:DatatypeProperty rdf:about="#hasMaximumCoordinate"/>
+    </rdfs:subPropertyOf>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="#hasCoordinate">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="#hasMinimumCoordinateY">
+    <rdfs:subPropertyOf>
+      <owl:DatatypeProperty rdf:about="#hasMinimumCoordinate"/>
+    </rdfs:subPropertyOf>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="#hasMinimumCoordinateX">
+    <rdfs:subPropertyOf>
+      <owl:DatatypeProperty rdf:about="#hasMinimumCoordinate"/>
+    </rdfs:subPropertyOf>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="#hasMinimumCoordinate">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="#hasLengthX">
+    <rdfs:subPropertyOf rdf:resource="#hasLength"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="#hasMaximumCoordinateY">
+    <rdfs:subPropertyOf>
+      <owl:DatatypeProperty rdf:about="#hasMaximumCoordinate"/>
+    </rdfs:subPropertyOf>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="#hasMaximumCoordinate">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="#hasDirectionX">
+    <rdfs:subPropertyOf>
+      <owl:DatatypeProperty rdf:ID="hasDirection"/>
+    </rdfs:subPropertyOf>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="#hasLengthZ">
+    <rdfs:subPropertyOf rdf:resource="#hasLength"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="#hasCoordinateX">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <rdfs:subPropertyOf rdf:resource="#hasCoordinate"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="#hasDirection">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="#hasDirectionZ">
+    <rdfs:subPropertyOf rdf:resource="#hasDirection"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="#hasDirectionY">
+    <rdfs:subPropertyOf rdf:resource="#hasDirection"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="#hasCoordinateY">
+    <rdfs:subPropertyOf rdf:resource="#hasCoordinate"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="#hasCoordinateZ">
+    <rdfs:subPropertyOf rdf:resource="#hasCoordinate"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+  </owl:DatatypeProperty>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.4.4, Build 579)  http://protege.stanford.edu -->

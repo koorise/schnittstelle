@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config Name="Schnittstelle_NX">
+    <Key Name="InformationModel">
+        <Key Name="Classes">
+            <Key Name="PhysicalComponent">
+                <Val Name="OWLName" Value="PhysicalComponent" />
+                <Val Name="Method" Value="AddComponents" />
+            </Key>
+            <Key Name="Link">
+                <Val Name="OWLName" Value="Link" />
+                <Val Name="Method" Value="AddLinks" />
+            </Key>
+            <Key Name="Joint">
+                <Val Name="OWLName" Value="Joint" />
+                <Val Name="Method" Value="AddJoints" />
+            </Key>
+            <Key Name="RelationalBoundingBox">
+                <Val Name="OWLName" Value="RelationalBoundingBox" />
+                <Val Name="Method" Value="AddRelationalBoundingBoxes" />
+            </Key>
+            <Key Name="HoleFeature">
+                <Val Name="OWLName" Value="HoleFeature" />
+                <Val Name="Method" Value="AddHoleFeatures" />
+            </Key>
+            <Key Name="HoleExpression">
+                <Val Name="OWLName" Value="HoleExpression" />
+                <Val Name="Method" Value="AddHoleExpressions" />
+            </Key>
+            <Key Name="MomentOfInertiaInMassCenter">
+                <Val Name="OWLName" Value="MomentOfInertiaInMassCenter" />
+                <Val Name="Method" Value="AddMomentsOfInertiaInMassCenter" />
+            </Key>
+            <Key Name="PositionCartesian3D">
+                <Val Name="OWLName" Value="PositionCartesian3D" />
+                <Key Name="PhysicalComponent">
+                    <Val Name="Method" Value="AddComponentPositions" />
+                </Key>
+                <Key Name="HoleFeature">
+                    <Val Name="Method" Value="AddHolePositions" />
+                </Key>
+            </Key>
+            <Key Name="Direction">
+                <Val Name="OWLName" Value="Direction" />
+                <Key Name="HoleFeature">
+                    <Val Name="Method" Value="AddHoleDirections" />
+                </Key>
+            </Key>
+            <Key Name="Mass">
+                <Val Name="OWLName" Value="Mass" />
+                <Val Name="Method" Value="AddMassOfComponents" />
+            </Key>
+            <Key Name="NameInAssembly">
+                <Val Name="OWLName" Value="NameInAssembly" />
+                <Val Name="Method" Value="AddComponentNames" />
+            </Key>
+            <Key Name="Diameter">
+                <Val Name="OWLName" Value="Diameter" />
+            </Key>
+            <Key Name="Depth">
+                <Val Name="OWLName" Value="Depth" />
+            </Key>
+            <Key Name="TipAngle">
+                <Val Name="OWLName" Value="TipAngle" />
+            </Key>
+            <Key Name="MechanicalConnection">
+                <Val Name="OWLName" Value="MechanicalConnection" />
+                <Val Name="Method" Value="AddMechanicalConnections" />
+            </Key>
+        </Key>
+        <Key Name="DatatypeProperties">
+            <Key Name="hasValueFloat">
+                <Val Name="OWLName" Value="hasValueFloat" />
+            </Key>
+            <Key Name="hasValueString">
+                <Val Name="OWLName" Value="hasValueString" />
+            </Key>
+            <Key Name="hasCoordinateX">
+                <Val Name="OWLName" Value="hasCoordinateX" />
+            </Key>
+            <Key Name="hasCoordinateY">
+                <Val Name="OWLName" Value="hasCoordinateY" />
+            </Key>
+            <Key Name="hasCoordinateZ">
+                <Val Name="OWLName" Value="hasCoordinateZ" />
+            </Key>
+            <Key Name="hasDirectionX">
+                <Val Name="OWLName" Value="hasDirectionX" />
+            </Key>
+            <Key Name="hasDirectionY">
+                <Val Name="OWLName" Value="hasDirectionY" />
+            </Key>
+            <Key Name="hasDirectionZ">
+                <Val Name="OWLName" Value="hasDirectionZ" />
+            </Key>
+            <Key Name="hasMinimumCoordinateX">
+                <Val Name="OWLName" Value="hasMinimumCoordinateX" />
+            </Key>
+            <Key Name="hasMinimumCoordinateY">
+                <Val Name="OWLName" Value="hasMinimumCoordinateY" />
+            </Key>
+            <Key Name="hasMinimumCoordinateZ">
+                <Val Name="OWLName" Value="hasMinimumCoordinateZ" />
+            </Key>
+            <Key Name="hasMaximumCoordinateX">
+                <Val Name="OWLName" Value="hasMaximumCoordinateX" />
+            </Key>
+            <Key Name="hasMaximumCoordinateY">
+                <Val Name="OWLName" Value="hasMaximumCoordinateY" />
+            </Key>
+            <Key Name="hasMaximumCoordinateZ">
+                <Val Name="OWLName" Value="hasMaximumCoordinateZ" />
+            </Key>
+            <Key Name="hasInertiaMassCenterX">
+                <Val Name="OWLName" Value="hasInertiaMassCenterX" />
+            </Key>
+            <Key Name="hasInertiaMassCenterY">
+                <Val Name="OWLName" Value="hasInertiaMassCenterY" />
+            </Key>
+            <Key Name="hasInertiaMassCenterZ">
+                <Val Name="OWLName" Value="hasInertiaMassCenterZ" />
+            </Key>
+        </Key>
+        <Key Name="ObjectProperties">
+            <Key Name="hasAttribute">
+                <Val Name="OWLName" Value="hasAttribute" />
+            </Key>
+            <Key Name="isAttributeOf">
+                <Val Name="OWLName" Value="isAttributeOf" />
+            </Key>
+            <Key Name="hasReferenceTo">
+                <Val Name="OWLName" Value="hasReferenceTo" />
+            </Key>
+            <Key Name="isReferenceOf">
+                <Val Name="OWLName" Value="isReferenceOf" />
+            </Key>
+            <Key Name="hasSubEntity">
+                <Val Name="OWLName" Value="hasSubEntity" />
+                <Val Name="Method" Value="AddChildComponents" />
+            </Key>
+            <Key Name="hasSuperEntity">
+                <Val Name="OWLName" Value="hasSuperEntity" />
+                <Val Name="Method" Value="AddParentComponents" />
+            </Key>
+            <Key Name="hasUnit">
+                <Val Name="OWLName" Value="hasUnit" />
+            </Key>
+            <Key Name="isRealizedBy">
+                <Val Name="OWLName" Value="isRealizedBy" />
+            </Key>
+            <Key Name="isRealizationOf">
+                <Val Name="OWLName" Value="isRealizationOf" />
+            </Key>
+            <Key Name="hasSubAttribute">
+                <Val Name="OWLName" Value="hasSubAttribute" />
+            </Key>
+            <Key Name="hasSuperAttribute">
+                <Val Name="OWLName" Value="hasSuperAttribute" />
+            </Key>
+        </Key>
+        <Key Name="Attributes">
+            <Key Name="Attributes">
+                <Key Name="PositionCartesian3D">
+                    <Key Name="PhysicalComponent">
+                        <Val Name="Method" Value="AddComponentPositions" />
+                    </Key>
+                    <Key Name="HoleFeature">
+                        <Val Name="Method" Value="AddHolePositions" />
+                    </Key>
+                </Key>
+                <Key Name="Direction">
+                    <Key Name="HoleFeature">
+                        <Val Name="Method" Value="AddHoleDirections" />
+                    </Key>
+                </Key>
+            </Key>
+        </Key>
+        <Key Name="Units">
+            <Key Name="BaseUnit">
+                <Val Name="degree" Value="degree" />
+                <Val Name="kilogram" Value="kilogram" />
+            </Key>
+            <Key Name="UnitDerivedByScaling">
+                <Val Name="milli_meter" Value="milli_meter" />
+            </Key>
+            <Key Name="m_DerivedUnit_ComplexUnit_UnitDerivedByRaisingToPower">
+                <Val Name="kilogram_milli_meterSquare" Value="kilogram_milli_meterSquare" />
+            </Key>
+            <Key Name="DerivedUnit">
+                <Key Name="ComplexUnit">
+                    <Key Name="UnitDerivedByRaisingToPower">
+                        <Val Name="kilogram_milli_meterSquare" Value="kilogram_milli_meterSquare" />
+                    </Key>
+                </Key>
+            </Key>
+        </Key>
+    </Key>
+    <Key Name="Namespaces">
+        <Val Name="Base" Value="http://localhost/ontologies/base.owl" />
+        <Val Name="Geometry" Value="http://localhost/ontologies/geometry.owl" />
+        <Val Name="Dynamics" Value="http://localhost/ontologies/dynamics.owl" />
+        <Val Name="Rdf" Value="http://www.w3.org/1999/02/22-rdf-syntax-ns" />
+        <Val Name="Units" Value="http://sweet.jpl.nasa.gov/1.1/units.owl" />
+        <Val Name="Assembly" Value="http://localhost/ontologies/assembly.owl" />
+        <Key Name="Base">
+            <Val Name="Full" Value="http://localhost/ontologies/base.owl" />
+            <Val Name="Short" Value="base" />
+        </Key>
+        <Key Name="Geometry">
+            <Val Name="Full" Value="http://localhost/ontologies/geometry.owl" />
+            <Val Name="Short" Value="geo" />
+        </Key>
+        <Key Name="Dynamics">
+            <Val Name="Full" Value="http://localhost/ontologies/dynamics.owl" />
+            <Val Name="Short" Value="dyn" />
+        </Key>
+        <Key Name="Owl">
+            <Val Name="Full" Value="http://www.w3.org/2002/07/owl" />
+            <Val Name="Short" Value="owl" />
+        </Key>
+        <Key Name="Rdf">
+            <Val Name="Full" Value="http://www.w3.org/1999/02/22-rdf-syntax-ns" />
+            <Val Name="Short" Value="rdf" />
+        </Key>
+        <Key Name="Rdfs">
+            <Val Name="Full" Value="http://www.w3.org/2000/01/rdf-schema" />
+            <Val Name="Short" Value="rdfs" />
+        </Key>
+        <Key Name="Swrl">
+            <Val Name="Full" Value="http://www.w3.org/2003/11/swrl" />
+            <Val Name="Short" Value="swrl" />
+        </Key>
+        <Key Name="Swrlb">
+            <Val Name="Full" Value="http://www.w3.org/2003/11/swrlb" />
+            <Val Name="Short" Value="swrlb" />
+        </Key>
+        <Key Name="Xsd">
+            <Val Name="Full" Value="http://www.w3.org/2001/XMLSchema" />
+            <Val Name="Short" Value="xsd" />
+        </Key>
+        <Key Name="Xsp">
+            <Val Name="Full" Value="http://www.owl-ontologies.com/2005/08/07/xsp.owl" />
+            <Val Name="Short" Value="xsp" />
+        </Key>
+        <Key Name="Protege">
+            <Val Name="Full" Value="http://protege.stanford.edu/plugins/owl/protege" />
+            <Val Name="Short" Value="protege" />
+        </Key>
+        <Key Name="Units">
+            <Val Name="Full" Value="http://sweet.jpl.nasa.gov/1.1/units.owl" />
+            <Val Name="Short" Value="units" />
+        </Key>
+        <Key Name="Assembly">
+            <Val Name="Full" Value="http://localhost/ontologies/assembly.owl" />
+            <Val Name="Short" Value="assem" />
+        </Key>
+    </Key>
+    <Key Name="Files">
+        <Val Name="DefaultOwlFilePath" Value="Informationsmodell" />
+        <Val Name="DefaultExportFilePath" Value="Export" />
+        <Val Name="BaseOwlFile" Value="base.owl" />
+        <Val Name="GeometryOwlFile" Value="geometry.owl" />
+        <Val Name="DynamicsOwlFile" Value="dynamics.owl" />
+        <Val Name="UnitsOwlFile" Value="units.owl" />
+        <Val Name="AssemblyOwlFile" Value="assembly.owl" />
+    </Key>
+</config>

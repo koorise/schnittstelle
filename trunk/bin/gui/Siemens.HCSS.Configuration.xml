@@ -1,0 +1,1572 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Siemens.HCSS.Configuration</name>
+    </assembly>
+    <members>
+        <member name="T:Siemens.HCSS.Configuration.NullConfig">
+            <summary>
+            Summary description for NullConfig.
+            </summary>
+        </member>
+        <member name="T:Siemens.HCSS.Configuration.IConfigurationKey">
+            <summary>
+            This interface declares the functionality to manage
+            configuration settings in HCSS- and HCSS-based components.
+            </summary>
+            <remarks>
+            Configuration settings in HCSS are of administrative nature.
+            These settings are Application or component or machine specific
+            and are usually maintained by a developer, integrator or administrator.
+            <b>User specific settings are managed by the context repository.</b>
+            </remarks> 
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.IConfigurationKey.ToString">
+            <summary>
+            Serializes the current key to a XML-structure.
+            To transform it back to a configuration-tree
+            use <see cref="M:Siemens.HCSS.Configuration.ConfigurationManager.CreateConfigurationFromString(System.String)"/>.
+            </summary>
+            <returns>
+            A XML-string containing the configuration-(sub)tree
+            referenced by this interface.
+            </returns>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.IConfigurationKey.OpenSubKey(System.String,System.Boolean)">
+            <summary>
+            Opens or creates the specified subkey.
+            </summary>
+            <param name="keyName">
+            Can be a concatenated keyname in the form
+            "KeyName1\KeyName2\KeyName3".
+            The keyName is relative to the key referenced by the interface.
+            </param>
+            <param name="create">
+            If this parameter is true 
+            and the key does not exist
+            the key is created.
+            </param>
+            <returns>
+            Returns Interface to opened or created subkey on success, null otherwise.
+            </returns>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.IConfigurationKey.DeleteSubKey(System.String,System.Boolean)">
+            <summary>
+            Deletes the specified subkey including its values.
+            </summary>
+            <param name="keyName">
+            Name of the key to be deleted.
+            Can be a concatenated keyname in the form
+            "KeyName1\KeyName2\KeyName3".
+            The keyName is relative to the key referenced by the interface.
+            </param>
+            <param name="recurse">
+            If this parameter is true and the specified key
+            has subkeys, the subkeys will be deleted too.
+            </param>
+            <returns>
+            Returns true when the key was deleted.
+            </returns>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.IConfigurationKey.GetSubKeyNames">
+            <summary>
+            Retrieves an array of strings that contains all the subkey names.
+            </summary>
+            <returns>
+            Returns an array of strings that contains 
+            the names of the subkeys for the current key.
+            </returns>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.IConfigurationKey.GetValue(System.String)">
+            <summary>
+            Retrieves the specified value as System.Object Type.
+            </summary>
+            <param name="valueName">
+            Name of the value to retrieve.
+            Can be a concatenated key-value-name in the form
+            "KeyName1\KeyName2\KeyName3\valueName".
+            The valueName is relative to the key referenced by the interface.
+            The caller is responsible to convert the returned System.Object Type.
+            </param>
+            <returns>
+            The data associated with valueName, or null if the value does not exist
+            </returns>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.IConfigurationKey.GetValueAsBool(System.String)">
+            <summary>
+            Retrieves the specified value as System.Boolean Type (bool).
+            </summary>
+            <param name="valueName">
+            Name of the value to retrieve.
+            Can be a concatenated key-value-name in the form
+            "KeyName1\KeyName2\KeyName3\valueName".
+            The valueName is relative to the key referenced by the interface.
+            </param>
+            <returns>
+            The data associated with valueName.
+            Throws Exceptions on failue.
+            </returns>
+            <exception cref="T:Siemens.HCSS.Configuration.ValueNotConfiguredException">
+            If the value does not exist
+            </exception>
+            <exception cref="T:Siemens.HCSS.Configuration.ValueBadFormatException">
+            If the value cannot be interpreted as bool
+            </exception>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.IConfigurationKey.GetValueAsByte(System.String)">
+            <summary>
+            Retrieves the specified value as System.Byte Type (byte).
+            </summary>
+            <param name="valueName">
+            Name of the value to retrieve.
+            Can be a concatenated key-value-name in the form
+            "KeyName1\KeyName2\KeyName3\valueName".
+            The valueName is relative to the key referenced by the interface.
+            </param>
+            <returns>
+            The data associated with valueName.
+            Throws Exceptions on failue.
+            </returns>
+            <exception cref="T:Siemens.HCSS.Configuration.ValueNotConfiguredException">
+            If the value does not exist
+            </exception>
+            <exception cref="T:Siemens.HCSS.Configuration.ValueBadFormatException">
+            If the value cannot be interpreted as byte
+            </exception>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.IConfigurationKey.GetValueAsShort(System.String)">
+            <summary>
+            Retrieves the specified value as System.Int16 Type (short).
+            </summary>
+            <param name="valueName">
+            Name of the value to retrieve.
+            Can be a concatenated key-value-name in the form
+            "KeyName1\KeyName2\KeyName3\valueName".
+            The valueName is relative to the key referenced by the interface.
+            </param>
+            <returns>
+            The data associated with valueName.
+            Throws Exceptions on failue.
+            </returns>
+            <exception cref="T:Siemens.HCSS.Configuration.ValueNotConfiguredException">
+            If the value does not exist
+            </exception>
+            <exception cref="T:Siemens.HCSS.Configuration.ValueBadFormatException">
+            If the value cannot be interpreted as short
+            </exception>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.IConfigurationKey.GetValueAsInt(System.String)">
+            <summary>
+            Retrieves the specified value as System.Int32 Type (int).
+            </summary>
+            <param name="valueName">
+            Name of the value to retrieve.
+            Can be a concatenated key-value-name in the form
+            "KeyName1\KeyName2\KeyName3\valueName".
+            The valueName is relative to the key referenced by the interface.
+            </param>
+            <returns>
+            The data associated with valueName.
+            Throws Exceptions on failue.
+            </returns>
+            <exception cref="T:Siemens.HCSS.Configuration.ValueNotConfiguredException">
+            If the value does not exist
+            </exception>
+            <exception cref="T:Siemens.HCSS.Configuration.ValueBadFormatException">
+            If the value cannot be interpreted as int
+            </exception>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.IConfigurationKey.GetValueAsLong(System.String)">
+            <summary>
+            Retrieves the specified value as System.Int64 Type (long).
+            </summary>
+            <param name="valueName">
+            Name of the value to retrieve.
+            Can be a concatenated key-value-name in the form
+            "KeyName1\KeyName2\KeyName3\valueName".
+            The valueName is relative to the key referenced by the interface.
+            </param>
+            <returns>
+            The data associated with valueName.
+            Throws Exceptions on failue.
+            </returns>
+            <exception cref="T:Siemens.HCSS.Configuration.ValueNotConfiguredException">
+            If the value does not exist
+            </exception>
+            <exception cref="T:Siemens.HCSS.Configuration.ValueBadFormatException">
+            If the value cannot be interpreted as long
+            </exception>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.IConfigurationKey.GetValueAsFloat(System.String)">
+            <summary>
+            Retrieves the specified value as System.Single Type (float).
+            </summary>
+            <param name="valueName">
+            Name of the value to retrieve.
+            Can be a concatenated key-value-name in the form
+            "KeyName1\KeyName2\KeyName3\valueName".
+            The valueName is relative to the key referenced by the interface.
+            </param>
+            <returns>
+            The data associated with valueName.
+            Throws Exceptions on failue.
+            </returns>
+            <exception cref="T:Siemens.HCSS.Configuration.ValueNotConfiguredException">
+            If the value does not exist
+            </exception>
+            <exception cref="T:Siemens.HCSS.Configuration.ValueBadFormatException">
+            If the value cannot be interpreted as float
+            </exception>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.IConfigurationKey.GetValueAsDouble(System.String)">
+            <summary>
+            Retrieves the specified value as System.Double Type (double).
+            </summary>
+            <param name="valueName">
+            Name of the value to retrieve.
+            Can be a concatenated key-value-name in the form
+            "KeyName1\KeyName2\KeyName3\valueName".
+            The valueName is relative to the key referenced by the interface.
+            </param>
+            <returns>
+            The data associated with valueName.
+            Throws Exceptions on failue.
+            </returns>
+            <exception cref="T:Siemens.HCSS.Configuration.ValueNotConfiguredException">
+            If the value does not exist
+            </exception>
+            <exception cref="T:Siemens.HCSS.Configuration.ValueBadFormatException">
+            If the value cannot be interpreted as double
+            </exception>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.IConfigurationKey.GetValueAsChar(System.String)">
+            <summary>
+            Retrieves the specified value as System.Char Type (char).
+            </summary>
+            <param name="valueName">
+            Name of the value to retrieve.
+            Can be a concatenated key-value-name in the form
+            "KeyName1\KeyName2\KeyName3\valueName".
+            The valueName is relative to the key referenced by the interface.
+            </param>
+            <returns>
+            The data associated with valueName.
+            Throws Exceptions on failue.
+            </returns>
+            <exception cref="T:Siemens.HCSS.Configuration.ValueNotConfiguredException">
+            If the value does not exist
+            </exception>
+            <exception cref="T:Siemens.HCSS.Configuration.ValueBadFormatException">
+            If the value cannot be interpreted as char
+            </exception>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.IConfigurationKey.GetValueAsString(System.String)">
+            <summary>
+            Retrieves the specified value as System.String Type.
+            </summary>
+            <param name="valueName">
+            Name of the value to retrieve.
+            Can be a concatenated key-value-name in the form
+            "KeyName1\KeyName2\KeyName3\valueName".
+            The valueName is relative to the key referenced by the interface.
+            </param>
+            <returns>
+            The data associated with valueName.
+            Throws Exceptions on failue.
+            </returns>
+            <exception cref="T:Siemens.HCSS.Configuration.ValueNotConfiguredException">
+            If the value does not exist
+            </exception>
+            <exception cref="T:Siemens.HCSS.Configuration.ValueBadFormatException">
+            If the value cannot be interpreted as string
+            </exception>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.IConfigurationKey.GetValue(System.String,System.Object)">
+            <summary>
+            Retrieves the specified value as System.Object Type, 
+            or the default value you provide 
+            if the specified value is not found
+            </summary>
+            <param name="valueName">
+            Name of the value to retrieve.
+            Can be a concatenated key-value-name in the form
+            "KeyName1\KeyName2\KeyName3\valueName".
+            The valueName is relative to the key referenced by the interface.
+            </param>
+            <param name="defaultValue">
+            Value to return if valueName does not exist 
+            </param>
+            <returns>
+            The data associated with valueName, 
+            or defaultValue if valueName is not found
+            </returns>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.IConfigurationKey.GetValueAsBool(System.String,System.Object)">
+            <summary>
+            Retrieves the specified value as System.Boolean Type (bool), 
+            or the default value you provide 
+            if the specified value is not found
+            </summary>
+            <param name="valueName">
+            Name of the value to retrieve.
+            Can be a concatenated key-value-name in the form
+            "KeyName1\KeyName2\KeyName3\valueName".
+            The valueName is relative to the key referenced by the interface.
+            </param>
+            <param name="defaultValue">
+            Value to return if valueName does not exist 
+            </param>
+            <returns>
+            The data associated with valueName, 
+            or defaultValue if valueName is not found,
+            or the system default (false) if the provided defaultValue 
+            cannot be interpreted as bool.
+            </returns>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.IConfigurationKey.GetValueAsByte(System.String,System.Object)">
+            <summary>
+            Retrieves the specified value as System.Byte Type (byte), 
+            or the default value you provide 
+            if the specified value is not found
+            </summary>
+            <param name="valueName">
+            Name of the value to retrieve.
+            Can be a concatenated key-value-name in the form
+            "KeyName1\KeyName2\KeyName3\valueName".
+            The valueName is relative to the key referenced by the interface.
+            </param>
+            <param name="defaultValue">
+            Value to return if valueName does not exist 
+            </param>
+            <returns>
+            The data associated with valueName, 
+            or defaultValue if valueName is not found,
+            or the system default (0) if the provided defaultValue 
+            cannot be interpreted as byte.
+            </returns>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.IConfigurationKey.GetValueAsShort(System.String,System.Object)">
+            <summary>
+            Retrieves the specified value as System.Int16 Type (short), 
+            or the default value you provide 
+            if the specified value is not found
+            </summary>
+            <param name="valueName">
+            Name of the value to retrieve.
+            Can be a concatenated key-value-name in the form
+            "KeyName1\KeyName2\KeyName3\valueName".
+            The valueName is relative to the key referenced by the interface.
+            </param>
+            <param name="defaultValue">
+            Value to return if valueName does not exist 
+            </param>
+            <returns>
+            The data associated with valueName, 
+            or defaultValue if valueName is not found,
+            or the system default (0) if the provided defaultValue 
+            cannot be interpreted as short.
+            </returns>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.IConfigurationKey.GetValueAsInt(System.String,System.Object)">
+            <summary>
+            Retrieves the specified value as System.Int32 Type (int), 
+            or the default value you provide 
+            if the specified value is not found
+            </summary>
+            <param name="valueName">
+            Name of the value to retrieve.
+            Can be a concatenated key-value-name in the form
+            "KeyName1\KeyName2\KeyName3\valueName".
+            The valueName is relative to the key referenced by the interface.
+            </param>
+            <param name="defaultValue">
+            Value to return if valueName does not exist 
+            </param>
+            <returns>
+            The data associated with valueName, 
+            or defaultValue if valueName is not found,
+            or the system default (0) if the provided defaultValue 
+            cannot be interpreted as int.
+            </returns>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.IConfigurationKey.GetValueAsLong(System.String,System.Object)">
+            <summary>
+            Retrieves the specified value as System.Int64 Type (long), 
+            or the default value you provide 
+            if the specified value is not found
+            </summary>
+            <param name="valueName">
+            Name of the value to retrieve.
+            Can be a concatenated key-value-name in the form
+            "KeyName1\KeyName2\KeyName3\valueName".
+            The valueName is relative to the key referenced by the interface.
+            </param>
+            <param name="defaultValue">
+            Value to return if valueName does not exist 
+            </param>
+            <returns>
+            The data associated with valueName, 
+            or defaultValue if valueName is not found,
+            or the system default (0) if the provided defaultValue 
+            cannot be interpreted as long.
+            </returns>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.IConfigurationKey.GetValueAsFloat(System.String,System.Object)">
+            <summary>
+            Retrieves the specified value as System.Single Type (float), 
+            or the default value you provide 
+            if the specified value is not found
+            </summary>
+            <param name="valueName">
+            Name of the value to retrieve.
+            Can be a concatenated key-value-name in the form
+            "KeyName1\KeyName2\KeyName3\valueName".
+            The valueName is relative to the key referenced by the interface.
+            </param>
+            <param name="defaultValue">
+            Value to return if valueName does not exist 
+            </param>
+            <returns>
+            The data associated with valueName, 
+            or defaultValue if valueName is not found,
+            or the system default (0.0) if the provided defaultValue 
+            cannot be interpreted as float.
+            </returns>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.IConfigurationKey.GetValueAsDouble(System.String,System.Object)">
+            <summary>
+            Retrieves the specified value as System.Double Type (double), 
+            or the default value you provide 
+            if the specified value is not found
+            </summary>
+            <param name="valueName">
+            Name of the value to retrieve.
+            Can be a concatenated key-value-name in the form
+            "KeyName1\KeyName2\KeyName3\valueName".
+            The valueName is relative to the key referenced by the interface.
+            </param>
+            <param name="defaultValue">
+            Value to return if valueName does not exist 
+            </param>
+            <returns>
+            The data associated with valueName, 
+            or defaultValue if valueName is not found,
+            or the system default (0.0) if the provided defaultValue 
+            cannot be interpreted as double.
+            </returns>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.IConfigurationKey.GetValueAsChar(System.String,System.Object)">
+            <summary>
+            Retrieves the specified value as System.Char Type (char), 
+            or the default value you provide 
+            if the specified value is not found
+            </summary>
+            <param name="valueName">
+            Name of the value to retrieve.
+            Can be a concatenated key-value-name in the form
+            "KeyName1\KeyName2\KeyName3\valueName".
+            The valueName is relative to the key referenced by the interface.
+            </param>
+            <param name="defaultValue">
+            Value to return if valueName does not exist 
+            </param>
+            <returns>
+            The data associated with valueName, 
+            or defaultValue if valueName is not found,
+            or the system default ('\0') if the provided defaultValue 
+            cannot be interpreted as char.
+            </returns>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.IConfigurationKey.GetValueAsString(System.String,System.Object)">
+            <summary>
+            Retrieves the specified value as System.String Type (string), 
+            or the default value you provide 
+            if the specified value is not found
+            </summary>
+            <param name="valueName">
+            Name of the value to retrieve.
+            Can be a concatenated key-value-name in the form
+            "KeyName1\KeyName2\KeyName3\valueName".
+            The valueName is relative to the key referenced by the interface.
+            </param>
+            <param name="defaultValue">
+            Value to return if valueName does not exist 
+            </param>
+            <returns>
+            The data associated with valueName, 
+            or defaultValue if valueName is not found.
+            Returns string.Empty ("") if the provided defaultValue
+            cannot be interpreted as string.
+            </returns>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.IConfigurationKey.SetValue(System.String,System.Object)">
+            <summary>
+            Sets the specified value.
+            </summary>
+            <param name="valueName">
+            Name of the value to store the data in.
+            Can be a concatenated key-value-name in the form
+            "KeyName1\KeyName2\KeyName3\valueName".
+            The valueName is relative to the key referenced by the interface.
+            </param>
+            <param name="val">
+            value data to store.
+            </param>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.IConfigurationKey.DeleteValue(System.String)">
+            <summary>
+            Deletes the specified value from a key
+            </summary>
+            <param name="valueName">
+            Name of the value to delete.
+            Can be a concatenated key-value-name in the form
+            "KeyName1\KeyName2\KeyName3\valueName".
+            The valueName is relative to the key referenced by the interface.
+            </param>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.IConfigurationKey.GetValueNames">
+            <summary>
+            Retrieves an array of strings that contains all the value names associated with this key
+            </summary>
+            <returns>
+            Returns an array of strings that contains the value names for the current key
+            </returns>
+        </member>
+        <member name="P:Siemens.HCSS.Configuration.IConfigurationKey.FullName">
+            <summary>
+            The absolute (qualified) name of the key.
+            The name of the key includes the absolute path including the root key.
+            </summary>
+        </member>
+        <member name="P:Siemens.HCSS.Configuration.IConfigurationKey.Name">
+            <summary>
+            The name of the key
+            </summary>
+        </member>
+        <member name="P:Siemens.HCSS.Configuration.IConfigurationKey.SubKeyCount">
+            <summary>
+            Number of Subkeys beneath this key.
+            </summary>
+        </member>
+        <member name="P:Siemens.HCSS.Configuration.IConfigurationKey.ValueCount">
+            <summary>
+            Number of values beneath this key.
+            </summary>
+        </member>
+        <member name="P:Siemens.HCSS.Configuration.IConfigurationKey.IsRootKey">
+            <summary>
+            Returns true if this IConfigurationKey interface 
+            represents the root-key of the configuration-tree
+            </summary>
+        </member>
+        <member name="P:Siemens.HCSS.Configuration.IConfigurationKey.Item(System.Int32)">
+            <summary>
+            Gets the IConfigurationKey interface
+            to the subkey with the specified index.
+            Index must be between 0 and IConfigurationKey.SubKeyCount-1.
+            </summary>
+        </member>
+        <member name="P:Siemens.HCSS.Configuration.IConfigurationKey.Item(System.String)">
+            <summary>
+            Sets or gets the specified value.
+            This is a shortcut for the <b>GetValue(valueName)</b> 
+            and <b>SetValue(valueName, val)</b> methods.
+            The returned object is the data associated with valueName
+            or <b>null</b> if the value does not exist.
+            The caller is responsible to convert the returned System.Object Type.
+            The given value is set to an valueitem specified through valueName.
+            The valueName including the subtree is created, when valueName does not exist.
+            The index is the name of the value to store the data in.
+            Can be a concatenated key-value-name in the form
+            "KeyName1\KeyName2\KeyName3\valueName".
+            The valueName is relative to the key referenced by the interface.
+            </summary>
+        </member>
+        <member name="T:Siemens.HCSS.Configuration.ValueBadFormatException">
+            <summary>
+            Exception thrown when a value is incorrect formatted
+            i.e. neither the configured value nor the provided default value
+            can be converted to the expected type.
+            </summary>
+            <remarks>
+            <para>
+            This type extends <see cref="T:System.ApplicationException"/>. It
+            does not add any new functionality but does differentiate the
+            type of exception being thrown.
+            </para>
+            </remarks>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.ValueBadFormatException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Siemens.HCSS.Configuration.ValueBadFormatException"/> class.
+            </summary>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.ValueBadFormatException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Siemens.HCSS.Configuration.ValueBadFormatException"/> class with
+            the specified message.
+            </summary>
+            <param name="message">A message to include with the exception.</param>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.ValueBadFormatException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Siemens.HCSS.Configuration.ValueBadFormatException"/> class
+            with the specified message and inner exception.
+            </summary>
+            <param name="message">A message to include with the exception.</param>
+            <param name="innerException">A nested exception to include.</param>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.ValueBadFormatException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Siemens.HCSS.Configuration.ValueBadFormatException"/> class 
+            with serialized data.
+            </summary>
+            <param name="info">
+            The <see cref="T:System.Runtime.Serialization.SerializationInfo"/> that holds the serialized object data 
+            about the exception being thrown.
+            </param>
+            <param name="context">
+            The <see cref="T:System.Runtime.Serialization.StreamingContext"/> that contains contextual information 
+            about the source or destination.
+            </param>
+        </member>
+        <member name="T:System.Collections.IOrderedDictionary">
+            <summary>
+            Interface that allows an implementation of a Collection 
+            that implements both, indexed and keyed access to the underlying data
+            </summary>
+        </member>
+        <member name="M:System.Collections.IOrderedDictionary.Insert(System.Int32,System.Object,System.Object)">
+            <summary>
+            Insert a key-value pair at specified index
+            </summary>
+            <param name="index">Index to insert at</param>
+            <param name="key">Key of the value</param>
+            <param name="value">Value itself</param>
+        </member>
+        <member name="M:System.Collections.IOrderedDictionary.RemoveAt(System.Int32)">
+            <summary>
+            Remove key-value pair at specified index
+            </summary>
+            <param name="index">Index to remove</param>
+        </member>
+        <member name="T:System.Collections.KeyedList">
+            <summary>
+            A KeyedList is an ordered key-value list.
+            <para>
+            In comparison: 
+            Hashtable is a key-value list that is not ordered; 
+            SortedList is a key-value list that is sorted; 
+            ArrayList is an ordered list.
+            </para>
+            But in the System.Collections namespace, there is nothing that implements an ordered key-value list. 
+            </summary>
+        </member>
+        <member name="M:System.Collections.KeyedList.Add(System.Object,System.Object)">
+            <summary>
+            Implements IDictionary.<see cref="M:System.Collections.IDictionary.Add(System.Object,System.Object)"/>
+            </summary>
+            <param name="key">look at IDictionary.<see cref="M:System.Collections.IDictionary.Add(System.Object,System.Object)"/></param>
+            <param name="value">look at IDictionary.<see cref="M:System.Collections.IDictionary.Add(System.Object,System.Object)"/></param>
+        </member>
+        <member name="M:System.Collections.KeyedList.Clear">
+            <summary>
+            Implements IDictionary.<see cref="M:System.Collections.IDictionary.Clear"/>
+            </summary>
+        </member>
+        <member name="M:System.Collections.KeyedList.Contains(System.Object)">
+            <summary>
+            Implements IDictionary.<see cref="M:System.Collections.IDictionary.Contains(System.Object)"/>
+            </summary>
+            <param name="key">look at IDictionary.<see cref="M:System.Collections.IDictionary.Contains(System.Object)"/></param>
+            <returns>look at IDictionary.<see cref="M:System.Collections.IDictionary.Contains(System.Object)"/></returns>
+        </member>
+        <member name="M:System.Collections.KeyedList.CopyTo(System.Array,System.Int32)">
+            <summary>
+            Implements IDictionary.<see cref="!:IDictionary.CopyTo"/>
+            </summary>
+            <param name="array">look at IDictionary.<see cref="!:IDictionary.CopyTo"/></param>
+            <param name="idx">look at IDictionary.<see cref="!:IDictionary.CopyTo"/></param>
+        </member>
+        <member name="M:System.Collections.KeyedList.Insert(System.Int32,System.Object,System.Object)">
+            <summary>
+            Implements IOrderedDictionary.<see cref="M:System.Collections.IOrderedDictionary.Insert(System.Int32,System.Object,System.Object)"/>
+            </summary>
+            <param name="idx">look at IOrderedDictionary.<see cref="M:System.Collections.IOrderedDictionary.Insert(System.Int32,System.Object,System.Object)"/></param>
+            <param name="key">look at IOrderedDictionary.<see cref="M:System.Collections.IOrderedDictionary.Insert(System.Int32,System.Object,System.Object)"/></param>
+            <param name="value">look at IOrderedDictionary.<see cref="M:System.Collections.IOrderedDictionary.Insert(System.Int32,System.Object,System.Object)"/></param>
+        </member>
+        <member name="M:System.Collections.KeyedList.Remove(System.Object)">
+            <summary>
+            Implements IDictionary.<see cref="M:System.Collections.IDictionary.Remove(System.Object)"/>
+            </summary>
+            <param name="key">look at IDictionary.<see cref="M:System.Collections.IDictionary.Remove(System.Object)"/></param>
+        </member>
+        <member name="M:System.Collections.KeyedList.RemoveAt(System.Int32)">
+            <summary>
+            Implements IOrderedDictionary.<see cref="M:System.Collections.IOrderedDictionary.RemoveAt(System.Int32)"/>
+            </summary>
+            <param name="idx">look at IOrderedDictionary.<see cref="M:System.Collections.IOrderedDictionary.RemoveAt(System.Int32)"/></param>
+        </member>
+        <member name="M:System.Collections.KeyedList.System#Collections#IDictionary#GetEnumerator">
+            <summary>
+            Implements IDictionary.<see cref="M:System.Collections.IDictionary.GetEnumerator"/>
+            </summary>
+            <returns>look at IDictionary.<see cref="M:System.Collections.IDictionary.GetEnumerator"/></returns>
+        </member>
+        <member name="M:System.Collections.KeyedList.System#Collections#IEnumerable#GetEnumerator">
+            <summary>
+            Implements IEnumerable.<see cref="M:System.Collections.IDictionary.GetEnumerator"/>
+            </summary>
+            <returns>look at IEnumerable.<see cref="M:System.Collections.IDictionary.GetEnumerator"/></returns>
+        </member>
+        <member name="M:System.Collections.KeyedList.IndexOf(System.Object)">
+            <summary>
+            Find Index of given key
+            </summary>
+            <param name="key">Key to find</param>
+            <returns>index of key-value pair identified with key</returns>
+        </member>
+        <member name="P:System.Collections.KeyedList.Count">
+            <summary>
+            Implements ICollection.<see cref="P:System.Collections.ICollection.Count"/>
+            </summary>
+        </member>
+        <member name="P:System.Collections.KeyedList.IsFixedSize">
+            <summary>
+            Implements IDictionary.<see cref="P:System.Collections.IDictionary.IsFixedSize"/>
+            </summary>
+        </member>
+        <member name="P:System.Collections.KeyedList.IsReadOnly">
+            <summary>
+            Implements IDictionary.<see cref="P:System.Collections.IDictionary.IsReadOnly"/>
+            </summary>
+        </member>
+        <member name="P:System.Collections.KeyedList.IsSynchronized">
+            <summary>
+            Implements ICollection.<see cref="P:System.Collections.ICollection.IsSynchronized"/>
+            </summary>
+        </member>
+        <member name="P:System.Collections.KeyedList.Item(System.Int32)">
+            <overloads>
+            Implements Indexer to access the value within the ordered list
+            </overloads>
+            <summary>
+            Access value by index
+            </summary>
+            <param name="idx">Index of key-value pair</param>
+            <returns>value stored at given index</returns>
+        </member>
+        <member name="P:System.Collections.KeyedList.Item(System.Object)">
+            <summary>
+            Access value by key
+            </summary>
+            <param name="key">key identifying the value</param>
+            <returns>value stored with given key</returns>
+        </member>
+        <member name="P:System.Collections.KeyedList.Keys">
+            <summary>
+            Implements IDictionary.<see cref="P:System.Collections.IDictionary.Keys"/>
+            </summary>
+        </member>
+        <member name="P:System.Collections.KeyedList.Values">
+            <summary>
+            Implements IDictionary.<see cref="P:System.Collections.IDictionary.Values"/>
+            </summary>
+        </member>
+        <member name="P:System.Collections.KeyedList.SyncRoot">
+            <summary>
+            Implements ICollection.<see cref="P:System.Collections.ICollection.SyncRoot"/>
+            </summary>
+        </member>
+        <member name="T:System.Collections.KeyedListEnumerator">
+            <summary>
+            Implements the <see cref="T:System.Collections.IDictionaryEnumerator"/> Interface
+            </summary>
+        </member>
+        <member name="M:System.Collections.KeyedListEnumerator.#ctor(System.Collections.ArrayList)">
+            <summary>
+            Creates a new instance of the enumerator
+            </summary>
+            <param name="list">List to enumerate</param>
+        </member>
+        <member name="M:System.Collections.KeyedListEnumerator.MoveNext">
+            <summary>
+            Implements IEnumerator.<see cref="M:System.Collections.IEnumerator.MoveNext"/>
+            </summary>
+            <returns>see IEnumerator.<see cref="M:System.Collections.IEnumerator.MoveNext"/></returns>
+        </member>
+        <member name="M:System.Collections.KeyedListEnumerator.Reset">
+            <summary>
+            Implements IEnumerator.<see cref="M:System.Collections.IEnumerator.Reset"/>
+            </summary>
+        </member>
+        <member name="P:System.Collections.KeyedListEnumerator.Current">
+            <summary>
+            Implements IEnumerator.<see cref="P:System.Collections.IEnumerator.Current"/>
+            </summary>
+        </member>
+        <member name="P:System.Collections.KeyedListEnumerator.Entry">
+            <summary>
+            Implements IDictionaryEnumerator.<see cref="P:System.Collections.IDictionaryEnumerator.Entry"/>
+            </summary>
+        </member>
+        <member name="P:System.Collections.KeyedListEnumerator.Key">
+            <summary>
+            Implements IDictionaryEnumerator.<see cref="P:System.Collections.IDictionaryEnumerator.Key"/>
+            </summary>
+        </member>
+        <member name="P:System.Collections.KeyedListEnumerator.Value">
+            <summary>
+            Implements IDictionaryEnumerator.<see cref="P:System.Collections.IDictionaryEnumerator.Value"/>
+            </summary>
+        </member>
+        <member name="T:Siemens.HCSS.Configuration.ConfigurationManager">
+            <summary>
+            The ConfigurationManager is used to obtain access to
+            the configuration settings belonging to the calling assembly.
+            The configuration settings can be read and written.
+            Additionally the properties of objects within the assembly 
+            can be attributed so that the configuration settings can be assigned 
+            to the properties automatically.
+            </summary>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.ConfigurationManager.#ctor">
+            <summary>
+            private constructor to avoid instantiation
+            </summary>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.ConfigurationManager.#cctor">
+            <summary>
+            static constructor for one-time initialisation
+            </summary>
+        </member>
+        <member name="F:Siemens.HCSS.Configuration.ConfigurationManager.s_Logger">
+            <summary>
+            Log-Interface
+            </summary>
+        </member>
+        <member name="F:Siemens.HCSS.Configuration.ConfigurationManager.s_Impl">
+            <summary>
+            ConfigurationManager implementation
+            <b>TODO: make configurable</b>
+            </summary>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.ConfigurationManager.GetConfiguration">
+            <summary>
+            Returns the configuration belonging to the calling assembly.
+            </summary>
+            <returns>
+            Returns the IConfigurationKey interface to the root-key 
+            of the configuration-tree belonging to the calling assembly.
+            </returns>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.ConfigurationManager.CreateConfigurationFromString(System.String)">
+            <summary>
+            Transforms the given XML-string to a configuration-(sub)tree.
+            </summary>
+            <param name="config">
+            A XML-string containing a serialized form of a configuration-(sub)tree.
+            The string is obtained using <see cref="M:Siemens.HCSS.Configuration.IConfigurationKey.ToString"/>.
+            </param>
+            <returns>
+            An IConfigurationKey interface representing the configuration-(sub)tree. 
+            </returns>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.ConfigurationManager.WriteConfiguration">
+            <summary>
+            Writes the configuration-tree to a storage
+            </summary>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.ConfigurationManager.AssignProperties(Siemens.HCSS.Configuration.IConfigurationKey,System.Object)">
+            <summary>
+            Automatically assigns the values from the configuration-tree
+            to the attributed properties of the given object
+            </summary>
+            <param name="config">
+            IConfigurationKey interface used as base 
+            for the relative ValueNames
+            of the attributed properties.
+            </param>
+            <param name="objectToConfigure">
+            Object with attributed public properties with <c>set</c> accessors.
+            </param>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.ConfigurationManager.FlushProperties(Siemens.HCSS.Configuration.IConfigurationKey,System.Object)">
+            <summary>
+            Automatically transfers the values from the 
+            the attributed properties of the given object 
+            to the configuration-tree
+            </summary>
+            <param name="config">        
+            IConfigurationKey interface used as base 
+            for the relative ValueNames
+            of the attributed properties.
+            </param>
+            <param name="configuredObject">
+            Object with attributed public properties with <c>get</c> accessors.
+            </param>
+        </member>
+        <member name="T:Siemens.HCSS.Configuration.Implementation.XmlFileStorageAdapter">
+            <summary>
+            Implements IConfigurationStorageAdapter.
+            XmlFileStorageAdapter reads and writes a configuration-tree
+            to a XML-File.
+            </summary>
+        </member>
+        <member name="T:Siemens.HCSS.Configuration.Adapter.IConfigurationStorageAdapter">
+            <summary>
+            The IConfigurationStorageAdapter interface has to be implemented
+            by a specific configuration storage adapter.
+            This adapter must be able to read and write the configuration-tree
+            from a specific storage. 
+            </summary>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.Adapter.IConfigurationStorageAdapter.Initialize(System.String)">
+            <summary>
+            Initializes the configuration-storage-adapter instance with the
+            configuration data. 
+            </summary>
+            <param name="paramList">
+            The configuration data is
+            provided through the string <paramref name="paramList"/>
+            which is a string representation of the <see cref="T:Siemens.HCSS.Configuration.IConfigurationKey"/>
+            belonging to the configuration-storage-adapter instance.
+            </param>
+            <returns>
+            Returns true if the configuration-storage-adapter was successfully initialized.
+            </returns>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.Adapter.IConfigurationStorageAdapter.ReadConfiguration(System.String,System.String,Siemens.HCSS.Configuration.IConfigurationKey)">
+            <summary>
+            Reads the configuration-tree of 
+            the specified assembly for the specified application
+            from a specific storage and transfers the data into 
+            the data-model of the Siemens.HCSS.Configuration assembly
+            using the IConfigurationKey interface.
+            </summary>
+            <param name="appName">
+            Basename of the application.
+            </param>
+            <param name="assemblyName">
+            Basename of the assembly.
+            </param>
+            <param name="target">
+            IConfigurationKey interface of the root-key of the configuration-tree.
+            </param>
+            <remarks>
+            A basename is the name of an assembly without 
+            path, extension, Culture, PublicKeyToken and Version
+            </remarks>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.Adapter.IConfigurationStorageAdapter.WriteConfiguration(System.String,System.String,Siemens.HCSS.Configuration.IConfigurationKey)">
+            <summary>
+            Writes the configuration-tree of
+            the specified assembly for the specified application
+            to a specific storage. 
+            The configuration-tree is accessible through the IConfigurationKey interface.
+            </summary>
+            <param name="appName">        
+            Basename of the application.
+            </param>
+            <param name="assemblyName">
+            Basename of the assembly.
+            </param>
+            <param name="source">
+            IConfigurationKey interface of the root-key of the configuration-tree.
+            </param>
+            <remarks>
+            A basename is the name of an assembly without 
+            path, extension, Culture, PublicKeyToken and Version
+            </remarks>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.Implementation.XmlFileStorageAdapter.#ctor">
+            <summary>
+            public constructor
+            </summary>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.Implementation.XmlFileStorageAdapter.#cctor">
+            <summary>
+            static constructor for one-time initialisation
+            </summary>
+        </member>
+        <member name="F:Siemens.HCSS.Configuration.Implementation.XmlFileStorageAdapter.s_Directory">
+            <summary>
+            Directory of the executing application
+            </summary>
+        </member>
+        <member name="F:Siemens.HCSS.Configuration.Implementation.XmlFileStorageAdapter.s_Logger">
+            <summary>
+            Log-Interface
+            </summary>
+        </member>
+        <member name="F:Siemens.HCSS.Configuration.Implementation.XmlFileStorageAdapter.m_ConfigRoot">
+            <summary>
+            The Configuration of this Adapter.
+            </summary>
+        </member>
+        <member name="F:Siemens.HCSS.Configuration.Implementation.XmlFileStorageAdapter.m_ConfigDir">
+            <summary>
+            Sub-directory of configuration files
+            </summary>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.Implementation.XmlFileStorageAdapter.Initialize(System.String)">
+            <summary>
+            please refer to <see cref="T:Siemens.HCSS.Configuration.Adapter.IConfigurationStorageAdapter"/>
+            </summary>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.Implementation.XmlFileStorageAdapter.ReadConfiguration(System.String,System.String,Siemens.HCSS.Configuration.IConfigurationKey)">
+            <summary>
+            please refer to <see cref="T:Siemens.HCSS.Configuration.Adapter.IConfigurationStorageAdapter"/>
+            </summary>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.Implementation.XmlFileStorageAdapter.WriteConfiguration(System.String,System.String,Siemens.HCSS.Configuration.IConfigurationKey)">
+            <summary>
+            please refer to <see cref="T:Siemens.HCSS.Configuration.Adapter.IConfigurationStorageAdapter"/>
+            </summary>
+        </member>
+        <member name="T:Siemens.HCSS.Configuration.Implementation.InternalHelper">
+            <summary>
+            InternalHelper is an internal class with static
+            helper functions used by several classes.
+            </summary>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.Implementation.InternalHelper.#ctor">
+            <summary>
+            private constructor to avoid instantiation
+            </summary>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.Implementation.InternalHelper.GetAssemblyBaseName(System.Reflection.Assembly)">
+            <summary>
+            Returns the basename of the specified assembly.
+            The basename is the name of an assembly 
+            without path, extension, Culture, PublicKeyToken and Version.
+            </summary>
+            <param name="assembly">
+            Assembly to obtain basename from.
+            </param>
+            <returns>
+            Returns the basename of the specified assembly.
+            </returns>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.Implementation.InternalHelper.GetNearestCallingAssembly">
+            <summary>
+            This method is different from Assembly.GetCallingAssembly(). This method walks
+            the call stack until it gets to the first assembly that is not this assembly, then
+            return it. That is, if assembly A calls a method in assembly B, B in C, C in D, 
+            and D calls a method in this assembly, GetNearestCallingAssembly() will return D.
+            </summary>
+            <returns>
+            Returns the first assembly in the cass stack hierarchy 
+            that is not this assembly
+            </returns>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.Implementation.InternalHelper.ReadKeyItems(System.Xml.XmlNodeList,Siemens.HCSS.Configuration.IConfigurationKey)">
+            <summary>
+            Reads recursively all SubKey Items from an XmlNodeList
+            and transfers them to the configuration-tree.
+            </summary>
+            <param name="keyItems">
+            XmlNodeList as source
+            </param>
+            <param name="target">
+            IConfigurationKey as target
+            </param>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.Implementation.InternalHelper.ReadValItems(System.Xml.XmlNodeList,Siemens.HCSS.Configuration.IConfigurationKey)">
+            <summary>
+            Reads all Value Items from an XmlNodeList
+            and transfers them to the configuration-tree.
+            </summary>
+            <param name="valueItems">
+            XmlNodeList as source
+            </param>
+            <param name="target">
+            IConfigurationKey as target
+            </param>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.Implementation.InternalHelper.WriteKey(System.Xml.XmlWriter,Siemens.HCSS.Configuration.IConfigurationKey)">
+            <summary>
+            Writes recursively the whole configuration-tree to an XmlWriter
+            </summary>
+            <param name="writer">
+            XmlWriter as target
+            </param>
+            <param name="source">
+            IConfigurationKey as source
+            </param>
+        </member>
+        <member name="T:Siemens.HCSS.Configuration.ValueNotConfiguredException">
+            <summary>
+            Exception thrown when a value is not configured
+            i.e. no value exists at specified location within the
+            configuration-tree. 
+            </summary>
+            <remarks>
+            <para>
+            This type extends <see cref="T:System.ApplicationException"/>. It
+            does not add any new functionality but does differentiate the
+            type of exception being thrown.
+            </para>
+            </remarks>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.ValueNotConfiguredException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Siemens.HCSS.Configuration.ValueNotConfiguredException"/> class.
+            </summary>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.ValueNotConfiguredException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Siemens.HCSS.Configuration.ValueNotConfiguredException"/> class with
+            the specified message.
+            </summary>
+            <param name="message">A message to include with the exception.</param>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.ValueNotConfiguredException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Siemens.HCSS.Configuration.ValueNotConfiguredException"/> class
+            with the specified message and inner exception.
+            </summary>
+            <param name="message">A message to include with the exception.</param>
+            <param name="innerException">A nested exception to include.</param>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.ValueNotConfiguredException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Siemens.HCSS.Configuration.ValueNotConfiguredException"/> class 
+            with serialized data.
+            </summary>
+            <param name="info">
+            The <see cref="T:System.Runtime.Serialization.SerializationInfo"/> that holds the serialized object data 
+            about the exception being thrown.
+            </param>
+            <param name="context">
+            The <see cref="T:System.Runtime.Serialization.StreamingContext"/> that contains contextual information 
+            about the source or destination.
+            </param>
+        </member>
+        <member name="T:Siemens.HCSS.Configuration.Implementation.IConfigurationManager">
+            <summary>
+            IConfigurationManager is the interface that 
+            a Configuration-Manager has to implement.
+            It is used internally within the Siemens.HCSS.Configuration assembly
+            in order to decouple the configuration access from 
+            the configuration implementation and to be prepared for deployment.
+            The Siemens.HCSS.Configuration Assembly contains an implementation of this 
+            interface.
+            </summary>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.Implementation.IConfigurationManager.GetConfiguration(System.String,System.String)">
+            <summary>
+            Returns the configuration that belongs to the assembly
+            of the given application from a specific storage
+            </summary>
+            <param name="appName">
+            Name of the application
+            </param>
+            <param name="assemblyName">
+            Name of the assembly
+            </param>
+            <returns>
+            Returns an IConfigurationKey interface to the root-key of
+            the configuration-tree of the 
+            specified assembly within the specified application
+            </returns>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.Implementation.IConfigurationManager.CreateConfigurationFromString(System.String)">
+            <summary>
+            Transforms the given XML-string to a configuration-(sub)tree.
+            </summary>
+            <param name="config">
+            A XML-string containing a serialized form of a configuration-(sub)tree.
+            The string is obtained using <see cref="M:Siemens.HCSS.Configuration.IConfigurationKey.ToString"/>.
+            </param>
+            <returns>
+            An IConfigurationKey interface representing the configuration-(sub)tree. 
+            </returns>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.Implementation.IConfigurationManager.WriteConfiguration(System.String,System.String)">
+            <summary>
+            Writes the configuration-tree of the specified assembly
+            within the specified application to a specific storage
+            </summary>
+            <param name="appName">
+            Name of the application
+            </param>
+            <param name="assemblyName">
+            Name of the assembly
+            </param>
+        </member>
+        <member name="T:Siemens.HCSS.Configuration.Implementation.ConfigurationManagerImpl">
+            <summary>
+            Implements IConfigurationManager.
+            Manages configuration-trees.
+            Connects to Configuration-Storage-Adapter.
+            </summary>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.Implementation.ConfigurationManagerImpl.#ctor">
+            <summary>
+            public constructor
+            </summary>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.Implementation.ConfigurationManagerImpl.#cctor">
+            <summary>
+            static constructor for one-time initialisation
+            </summary>
+        </member>
+        <member name="F:Siemens.HCSS.Configuration.Implementation.ConfigurationManagerImpl.s_Configurations">
+            <summary>
+            mapping of Assembly to ConfigurationImpl
+            </summary>
+        </member>
+        <member name="F:Siemens.HCSS.Configuration.Implementation.ConfigurationManagerImpl.s_StorageAdapter">
+            <summary>
+            Storageadapter access
+            </summary>
+        </member>
+        <member name="F:Siemens.HCSS.Configuration.Implementation.ConfigurationManagerImpl.s_Logger">
+            <summary>
+            Log-Interface
+            </summary>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.Implementation.ConfigurationManagerImpl.GetConfiguration(System.String,System.String)">
+            <summary>
+            please refer to <see cref="T:Siemens.HCSS.Configuration.Implementation.IConfigurationManager"/>
+            </summary>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.Implementation.ConfigurationManagerImpl.CreateConfigurationFromString(System.String)">
+            <summary>
+            please refer to <see cref="T:Siemens.HCSS.Configuration.Implementation.IConfigurationManager"/>
+            </summary>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.Implementation.ConfigurationManagerImpl.WriteConfiguration(System.String,System.String)">
+            <summary>
+            please refer to <see cref="T:Siemens.HCSS.Configuration.Implementation.IConfigurationManager"/>
+            </summary>
+        </member>
+        <member name="T:Siemens.HCSS.Configuration.Implementation.ComponentProvider">
+            <summary>
+            This class implements a component provider
+            </summary>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.Implementation.ComponentProvider.#ctor">
+            <summary>
+            Constructor of class ComponentProvider
+            </summary>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.Implementation.ComponentProvider.GetComponent(System.String,System.String)">
+            <summary>
+            Method to load types dynamically
+            </summary>
+            <param name="dllName">Name of the dll containing the type</param>
+            <param name="typeName">Type to load</param>
+            <returns>
+            An instance of the loaded type or 
+            null if assembly or type was not found
+            </returns>
+        </member>
+        <member name="P:Siemens.HCSS.Configuration.Implementation.ComponentProvider.Instance">
+            <summary>
+            Property representing the single instance of ComponentProvider
+            </summary>
+            <remarks>This property is readonly</remarks>
+        </member>
+        <member name="T:Siemens.HCSS.Configuration.Implementation.ConfigurationKeyImpl">
+            <summary>
+            Implements IConfigurationKey.
+            Manages a tree of ConfigurationKeyImpl instances.
+            </summary>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.Implementation.ConfigurationKeyImpl.#ctor(System.String,System.String)">
+            <summary>
+            creates new instance of IConfigurationKeyImpl instance
+            </summary>
+            <param name="parentKey">
+            Full name of parent key
+            </param>
+            <param name="keyName">
+            Name of this key
+            </param>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.Implementation.ConfigurationKeyImpl.#cctor">
+            <summary>
+            static constructor for one-time initialisation
+            </summary>
+        </member>
+        <member name="F:Siemens.HCSS.Configuration.Implementation.ConfigurationKeyImpl.m_SubKeys">
+            <summary>
+            mapping of Names to IConfigurationKey-Implementations
+            </summary>
+        </member>
+        <member name="F:Siemens.HCSS.Configuration.Implementation.ConfigurationKeyImpl.m_Values">
+            <summary>
+            mapping of Names to values (object instances)
+            </summary>
+        </member>
+        <member name="F:Siemens.HCSS.Configuration.Implementation.ConfigurationKeyImpl.m_ParentKey">
+            <summary>
+            full name of parent key
+            </summary>
+        </member>
+        <member name="F:Siemens.HCSS.Configuration.Implementation.ConfigurationKeyImpl.m_KeyName">
+            <summary>
+            name of this key
+            </summary>
+        </member>
+        <member name="F:Siemens.HCSS.Configuration.Implementation.ConfigurationKeyImpl.s_Logger">
+            <summary>
+            Log-Interface
+            </summary>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.Implementation.ConfigurationKeyImpl.Siemens#HCSS#Configuration#IConfigurationKey#OpenSubKey(System.String,System.Boolean)">
+            <summary>
+            please refer to <see cref="M:Siemens.HCSS.Configuration.IConfigurationKey.OpenSubKey(System.String,System.Boolean)"/>
+            </summary>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.Implementation.ConfigurationKeyImpl.Siemens#HCSS#Configuration#IConfigurationKey#DeleteSubKey(System.String,System.Boolean)">
+            <summary>
+            please refer to <see cref="M:Siemens.HCSS.Configuration.IConfigurationKey.DeleteSubKey(System.String,System.Boolean)"/>
+            </summary>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.Implementation.ConfigurationKeyImpl.Siemens#HCSS#Configuration#IConfigurationKey#GetSubKeyNames">
+            <summary>
+            please refer to <see cref="M:Siemens.HCSS.Configuration.IConfigurationKey.GetSubKeyNames"/>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.Implementation.ConfigurationKeyImpl.Siemens#HCSS#Configuration#IConfigurationKey#GetValue(System.String)">
+            <summary>
+            please refer to <see cref="M:Siemens.HCSS.Configuration.IConfigurationKey.GetValue(System.String)"/>
+            </summary>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.Implementation.ConfigurationKeyImpl.Siemens#HCSS#Configuration#IConfigurationKey#GetValueAsBool(System.String)">
+            <summary>
+            please refer to <see cref="M:Siemens.HCSS.Configuration.IConfigurationKey.GetValueAsBool(System.String)"/>
+            </summary>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.Implementation.ConfigurationKeyImpl.Siemens#HCSS#Configuration#IConfigurationKey#GetValueAsByte(System.String)">
+            <summary>
+            please refer to <see cref="M:Siemens.HCSS.Configuration.IConfigurationKey.GetValueAsByte(System.String)"/>
+            </summary>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.Implementation.ConfigurationKeyImpl.Siemens#HCSS#Configuration#IConfigurationKey#GetValueAsShort(System.String)">
+            <summary>
+            please refer to <see cref="M:Siemens.HCSS.Configuration.IConfigurationKey.GetValueAsShort(System.String)"/>
+            </summary>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.Implementation.ConfigurationKeyImpl.Siemens#HCSS#Configuration#IConfigurationKey#GetValueAsInt(System.String)">
+            <summary>
+            please refer to <see cref="M:Siemens.HCSS.Configuration.IConfigurationKey.GetValueAsInt(System.String)"/>
+            </summary>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.Implementation.ConfigurationKeyImpl.Siemens#HCSS#Configuration#IConfigurationKey#GetValueAsLong(System.String)">
+            <summary>
+            please refer to <see cref="M:Siemens.HCSS.Configuration.IConfigurationKey.GetValueAsLong(System.String)"/>
+            </summary>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.Implementation.ConfigurationKeyImpl.Siemens#HCSS#Configuration#IConfigurationKey#GetValueAsFloat(System.String)">
+            <summary>
+            please refer to <see cref="M:Siemens.HCSS.Configuration.IConfigurationKey.GetValueAsFloat(System.String)"/>
+            </summary>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.Implementation.ConfigurationKeyImpl.Siemens#HCSS#Configuration#IConfigurationKey#GetValueAsDouble(System.String)">
+            <summary>
+            please refer to <see cref="M:Siemens.HCSS.Configuration.IConfigurationKey.GetValueAsDouble(System.String)"/>
+            </summary>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.Implementation.ConfigurationKeyImpl.Siemens#HCSS#Configuration#IConfigurationKey#GetValueAsChar(System.String)">
+            <summary>
+            please refer to <see cref="M:Siemens.HCSS.Configuration.IConfigurationKey.GetValueAsChar(System.String)"/>
+            </summary>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.Implementation.ConfigurationKeyImpl.Siemens#HCSS#Configuration#IConfigurationKey#GetValueAsString(System.String)">
+            <summary>
+            please refer to <see cref="M:Siemens.HCSS.Configuration.IConfigurationKey.GetValueAsString(System.String)"/>
+            </summary>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.Implementation.ConfigurationKeyImpl.Siemens#HCSS#Configuration#IConfigurationKey#GetValue(System.String,System.Object)">
+            <summary>
+            please refer to <see cref="M:Siemens.HCSS.Configuration.IConfigurationKey.GetValue(System.String,System.Object)"/>
+            </summary>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.Implementation.ConfigurationKeyImpl.Siemens#HCSS#Configuration#IConfigurationKey#GetValueAsBool(System.String,System.Object)">
+            <summary>
+            please refer to <see cref="M:Siemens.HCSS.Configuration.IConfigurationKey.GetValueAsBool(System.String,System.Object)"/>
+            </summary>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.Implementation.ConfigurationKeyImpl.Siemens#HCSS#Configuration#IConfigurationKey#GetValueAsByte(System.String,System.Object)">
+            <summary>
+            please refer to <see cref="M:Siemens.HCSS.Configuration.IConfigurationKey.GetValueAsByte(System.String,System.Object)"/>
+            </summary>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.Implementation.ConfigurationKeyImpl.Siemens#HCSS#Configuration#IConfigurationKey#GetValueAsShort(System.String,System.Object)">
+            <summary>
+            please refer to <see cref="M:Siemens.HCSS.Configuration.IConfigurationKey.GetValueAsShort(System.String,System.Object)"/>
+            </summary>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.Implementation.ConfigurationKeyImpl.Siemens#HCSS#Configuration#IConfigurationKey#GetValueAsInt(System.String,System.Object)">
+            <summary>
+            please refer to <see cref="M:Siemens.HCSS.Configuration.IConfigurationKey.GetValueAsInt(System.String,System.Object)"/>
+            </summary>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.Implementation.ConfigurationKeyImpl.Siemens#HCSS#Configuration#IConfigurationKey#GetValueAsLong(System.String,System.Object)">
+            <summary>
+            please refer to <see cref="M:Siemens.HCSS.Configuration.IConfigurationKey.GetValueAsLong(System.String,System.Object)"/>
+            </summary>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.Implementation.ConfigurationKeyImpl.Siemens#HCSS#Configuration#IConfigurationKey#GetValueAsFloat(System.String,System.Object)">
+            <summary>
+            please refer to <see cref="M:Siemens.HCSS.Configuration.IConfigurationKey.GetValueAsFloat(System.String,System.Object)"/>
+            </summary>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.Implementation.ConfigurationKeyImpl.Siemens#HCSS#Configuration#IConfigurationKey#GetValueAsDouble(System.String,System.Object)">
+            <summary>
+            please refer to <see cref="M:Siemens.HCSS.Configuration.IConfigurationKey.GetValueAsDouble(System.String,System.Object)"/>
+            </summary>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.Implementation.ConfigurationKeyImpl.Siemens#HCSS#Configuration#IConfigurationKey#GetValueAsChar(System.String,System.Object)">
+            <summary>
+            please refer to <see cref="M:Siemens.HCSS.Configuration.IConfigurationKey.GetValueAsChar(System.String,System.Object)"/>
+            </summary>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.Implementation.ConfigurationKeyImpl.Siemens#HCSS#Configuration#IConfigurationKey#GetValueAsString(System.String,System.Object)">
+            <summary>
+            please refer to <see cref="M:Siemens.HCSS.Configuration.IConfigurationKey.GetValueAsString(System.String,System.Object)"/>
+            </summary>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.Implementation.ConfigurationKeyImpl.Siemens#HCSS#Configuration#IConfigurationKey#SetValue(System.String,System.Object)">
+            <summary>
+            please refer to <see cref="M:Siemens.HCSS.Configuration.IConfigurationKey.SetValue(System.String,System.Object)"/>
+            </summary>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.Implementation.ConfigurationKeyImpl.Siemens#HCSS#Configuration#IConfigurationKey#DeleteValue(System.String)">
+            <summary>
+            please refer to <see cref="M:Siemens.HCSS.Configuration.IConfigurationKey.DeleteValue(System.String)"/>
+            </summary>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.Implementation.ConfigurationKeyImpl.Siemens#HCSS#Configuration#IConfigurationKey#GetValueNames">
+            <summary>
+            please refer to <see cref="M:Siemens.HCSS.Configuration.IConfigurationKey.GetValueNames"/>
+            </summary>
+        </member>
+        <member name="P:Siemens.HCSS.Configuration.Implementation.ConfigurationKeyImpl.Siemens#HCSS#Configuration#IConfigurationKey#FullName">
+            <summary>
+            please refer to <see cref="P:Siemens.HCSS.Configuration.IConfigurationKey.FullName"/>
+            </summary>
+        </member>
+        <member name="P:Siemens.HCSS.Configuration.Implementation.ConfigurationKeyImpl.Siemens#HCSS#Configuration#IConfigurationKey#Name">
+            <summary>
+            please refer to <see cref="P:Siemens.HCSS.Configuration.IConfigurationKey.Name"/>
+            </summary>
+        </member>
+        <member name="P:Siemens.HCSS.Configuration.Implementation.ConfigurationKeyImpl.Siemens#HCSS#Configuration#IConfigurationKey#SubKeyCount">
+            <summary>
+            please refer to <see cref="P:Siemens.HCSS.Configuration.IConfigurationKey.SubKeyCount"/>
+            </summary>
+        </member>
+        <member name="P:Siemens.HCSS.Configuration.Implementation.ConfigurationKeyImpl.Siemens#HCSS#Configuration#IConfigurationKey#ValueCount">
+            <summary>
+            please refer to <see cref="P:Siemens.HCSS.Configuration.IConfigurationKey.ValueCount"/>
+            </summary>
+        </member>
+        <member name="P:Siemens.HCSS.Configuration.Implementation.ConfigurationKeyImpl.Siemens#HCSS#Configuration#IConfigurationKey#IsRootKey">
+            <summary>
+            please refer to <see cref="P:Siemens.HCSS.Configuration.IConfigurationKey.IsRootKey"/>
+            </summary>
+        </member>
+        <member name="P:Siemens.HCSS.Configuration.Implementation.ConfigurationKeyImpl.Siemens#HCSS#Configuration#IConfigurationKey#Item(System.String)">
+            <summary>
+            please refer to <see cref="P:Siemens.HCSS.Configuration.IConfigurationKey.Item(System.String)"/>
+            </summary>
+        </member>
+        <member name="P:Siemens.HCSS.Configuration.Implementation.ConfigurationKeyImpl.Siemens#HCSS#Configuration#IConfigurationKey#Item(System.Int32)">
+            <summary>
+            please refer to <see cref="P:Siemens.HCSS.Configuration.IConfigurationKey.Item(System.Int32)"/>
+            </summary>
+        </member>
+        <member name="T:Siemens.HCSS.Configuration.ConfigurationAttribute">
+            <summary>
+            Use ConfigurationAttribute to attribute public properties
+            implementig both, <c>get</c> and <c>set</c> accessors, 
+            with the information where in the configuration-tree 
+            belonging to the assembly the value of the property is located.
+            </summary>
+            <example>
+            <code>
+            class Subclass
+            {
+                // Access to the root-key of the configuration-tree
+                internal readonly IConfigurationKey s_Config;
+                
+                internal string m_StringProp1;
+                internal int    m_IntProp1;
+                
+                public Subclass()
+                {
+                    // read the configuration belonging to this assembly
+                    s_Config = ConfigurationManager.GetConfiguration();
+                    
+                    // Find all attributed properties within
+                    // this class and assign the values 
+                    // found in the configuration-tree to them.
+                    ConfigurationManager.AssignProperties(s_Config, this);
+                }
+                
+                // The value of the property "StringProp1"
+                // is located within the root-key 
+                // of the configuration-tree
+                // under the name "Val1".
+                // If the configuration-setting "Val1" does not exist,
+                // it is implicitly created and the specified default-value,
+                // here "DefaultString", is assigned.
+                [ConfigurationAttribute("Val1","DefaultString")]
+                public string StringProp1
+                {
+                    get { return m_StringProp1;}
+                    set { m_StringProp1 = value;}
+                }  
+                 
+                // The value of the property "IntProp1" 
+                // is located within the subkey "SubKey1" 
+                // of the configuration-tree
+                // under the name "Val2".
+                // If the configuration-setting "Val2" does not exist,
+                // it is implicitly created including the subkey
+                // and the specified default-value, here "0", is assigned      
+                [ConfigurationAttribute(@"SubKey1\Val2",0)]
+                public int IntProp1
+                {
+                    get { return m_IntProp1; }
+                    set { m_IntProp1 = value; }
+                }
+            }
+            </code>
+            </example>
+        </member>
+        <member name="M:Siemens.HCSS.Configuration.ConfigurationAttribute.#ctor(System.String,System.Object)">
+            <summary>
+            Attribute constructor. 
+            You can attribute public properties. 
+            The properties must have <c>get</c> and <c>set</c> accesors.
+            </summary>
+            <param name="valueName">
+            The name of the value.
+            Can be a concatenated key-value-name in the form
+            "KeyName1\KeyName2\KeyName3\valueName".
+            The valueName is relative to a key.
+            </param>
+            <param name="defaultValue">
+            Value to assign to the property if valueName does not exist
+            </param>
+        </member>
+        <member name="P:Siemens.HCSS.Configuration.ConfigurationAttribute.ValueName">
+            <summary>
+            The name of the value.
+            </summary>
+        </member>
+        <member name="P:Siemens.HCSS.Configuration.ConfigurationAttribute.DefaultValue">
+            <summary>
+            Value to assign if ValueName does not exist
+            </summary>
+        </member>
+    </members>
+</doc>
